@@ -1,0 +1,641 @@
+DEBUG 2018-01-28 19:04:30,640: 	 Executing command: 'submit'
+DEBUG 2018-01-28 19:04:30,640: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2018-01-28 19:04:30,646: 	 Checking credentials
+DEBUG 2018-01-28 19:04:30,647: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-28 19:04:30,647: 	 Getting proxy life time left
+DEBUG 2018-01-28 19:04:31,251: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 81782
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:04:31,757: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 81782
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:04:31,757: 	 Proxy valid for 22:43:02 hours
+INFO 2018-01-28 19:04:31,761: 	 Will use CRAB configuration file crab_TagProbe_eraD.py
+DEBUG 2018-01-28 19:04:31,761: 	 Loading CRAB configuration file.
+DEBUG 2018-01-28 19:04:34,654: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2018-01-28 19:04:34,814: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:04:34,814: 	 Checking credentials
+DEBUG 2018-01-28 19:04:34,815: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-28 19:04:34,815: 	 Getting proxy life time left
+DEBUG 2018-01-28 19:04:35,321: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 81778
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:04:35,926: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 81778
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:04:35,927: 	 Proxy valid for 22:42:58 hours
+DEBUG 2018-01-28 19:04:36,431: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u93494 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:04:37,406: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-01-28 19:04:37,514: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:04:37,515: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-01-28 19:04:37,515: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2018-01-28 19:04:37,719: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 645:16:26  (26.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:04:37,720: 	 Myproxy is valid: 2322986
+DEBUG 2018-01-28 19:04:37,720: 	 Command use: submit
+DEBUG 2018-01-28 19:04:37,720: 	 Options use: ['-c', 'crab_TagProbe_eraD.py']
+DEBUG 2018-01-28 19:04:38,687: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2018-01-28 19:04:38,687: 	 Instance is prod
+DEBUG 2018-01-28 19:04:38,687: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-01-28 19:04:38,687: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-01-28 19:04:38,687: 	 Started submission
+DEBUG 2018-01-28 19:04:38,687: 	 Working on /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD
+DEBUG 2018-01-28 19:04:39,660: 	 Loading required information from the environment
+DEBUG 2018-01-28 19:04:39,660: 	 Found CMSSW_9_4_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0
+DEBUG 2018-01-28 19:04:39,662: 	 Loading required information from the environment
+DEBUG 2018-01-28 19:04:39,662: 	 Found CMSSW_9_4_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0
+DEBUG 2018-01-28 19:04:39,674: 	 UNIQUE NAME: tarUUID 51547602-b17f-4a00-8809-1c76096ae14f 
+DEBUG 2018-01-28 19:04:39,675: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = True
+config.General.transferOutputs = True
+config.General.workArea = 'crab_projects'
+config.General.requestName = 'TagAndProbeeraD'
+config.section_('JobType')
+config.JobType.psetName = 'TagProbe_eraD.py'
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.inputDataset = '/SingleMuon/Run2017D-PromptReco-v1/MINIAOD'
+config.Data.outputDatasetTag = 'TagAndProbe_eraD'
+config.Data.publication = True
+config.Data.unitsPerJob = 1000
+config.Data.splitting = 'LumiBased'
+config.Data.inputDBS = 'global'
+config.Data.lumiMask = 'eraD.txt'
+config.Data.outLFNDirBase = '/store/user/psiddire/'
+config.Data.runRange = '302031-302663'
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2018-01-28 19:04:39,675: 	 self.config.JobType.psetName: TagProbe_eraD.py
+INFO 2018-01-28 19:04:39,675: 	 Importing CMSSW configuration TagProbe_eraD.py
+INFO 2018-01-28 19:04:39,763: 	 Finished importing CMSSW configuration TagProbe_eraD.py
+DEBUG 2018-01-28 19:04:39,763: 	 Writing CMSSW configuration to /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/inputs/PSet.py
+DEBUG 2018-01-28 19:04:39,795: 	 The following EDM output files will be collected: []
+DEBUG 2018-01-28 19:04:39,795: 	 The following TFile output files will be collected: ['TagAndProbe_eraD.root']
+DEBUG 2018-01-28 19:04:39,795: 	 The following user output files will be collected: []
+DEBUG 2018-01-28 19:04:39,795: 	 Loading required information from the environment
+DEBUG 2018-01-28 19:04:39,795: 	 Found CMSSW_9_4_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0
+DEBUG 2018-01-28 19:04:39,795: 	 Making tarball in /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/inputs/51547602-b17f-4a00-8809-1c76096ae14fdefault.tgz
+DEBUG 2018-01-28 19:04:39,799: 	 Checking directory /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/lib
+DEBUG 2018-01-28 19:04:39,799: 	 Adding directory /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/lib to tarball
+DEBUG 2018-01-28 19:04:39,904: 	 Checking directory /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/biglib
+DEBUG 2018-01-28 19:04:39,904: 	 Adding directory /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/biglib to tarball
+DEBUG 2018-01-28 19:04:39,905: 	 Checking directory /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/module
+DEBUG 2018-01-28 19:04:39,916: 	 Uploading archive /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/inputs/51547602-b17f-4a00-8809-1c76096ae14fdefault.tgz (107 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2018-01-28 19:04:40,861: 	 Loading required information from the environment
+DEBUG 2018-01-28 19:04:40,861: 	 Found CMSSW_9_4_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0
+DEBUG 2018-01-28 19:04:40,861: 	 Making tarball in /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/inputs/debugFiles.tgz
+DEBUG 2018-01-28 19:04:40,865: 	 Uploading archive /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/inputs/debugFiles.tgz (1 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2018-01-28 19:04:41,808: 	 Result uploading input files: 776cbe14decbc3cc400a32dfe3218538b8c4f5e1e480a9e12ac2851056b3f672.tar.gz 
+DEBUG 2018-01-28 19:04:41,809: 	 Attaching lumi mask eraD.txt to the request
+DEBUG 2018-01-28 19:04:41,809: 	 Reading lumi-mask from eraD.txt
+WARNING 2018-01-28 19:04:41,811: 	 Warning: The following output files will not be published, as they are not EDM files: ['TagAndProbe_eraD.root']
+INFO 2018-01-28 19:04:41,811: 	 Sending the request to the server
+DEBUG 2018-01-28 19:04:41,811: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 1, 'useparent': 0, 'asyncdest': 'T2_CH_CERN', 'algoargs': 1000, 'cachefilename': '776cbe14decbc3cc400a32dfe3218538b8c4f5e1e480a9e12ac2851056b3f672.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_9_4_0', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/SingleMuon/Run2017D-PromptReco-v1/MINIAOD', 'lfn': '/store/user/psiddire/', 'dryrun': 0, 'workflow': 'crab_TagAndProbeeraD', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'runs': [u'302031', u'302033', u'302034', u'302037', u'302038', u'302040', u'302041', u'302042', u'302043', u'302131', u'302159', u'302163', u'302165', u'302166', u'302225', u'302228', u'302229', u'302240', u'302262', u'302263', u'302277', u'302279', u'302280', u'302322', u'302328', u'302337', u'302342', u'302343', u'302344', u'302350', u'302388', u'302392', u'302393', u'302448', u'302472', u'302473', u'302474', u'302475', u'302476', u'302479', u'302484', u'302485', u'302492', u'302493', u'302494', u'302509', u'302513', u'302522', u'302523', u'302525', u'302526', u'302548', u'302551', u'302553', u'302554', u'302555', u'302563', u'302565', u'302572', u'302573', u'302596', u'302597', u'302634', u'302635', u'302651', u'302654', u'302661', u'302663'], 'lumis': ['1,401,403,446,448,675,678,818', '1,40,44,46', '1,20', '18,20', '10,10', '1,174', '1,72', '1,523', '1,228', '71,943', '33,140', '32,671,674,1230', '1,85', '1,16', '54,133,136,923', '58,78,81,293', '1,457', '1,960', '37,471', '1,1250', '15,17,22,192,194,391', '1,71', '1,152', '33,870', '42,722', '27,162', '19,72', '1,98', '3,482', '1,136', '27,157,164,717', '45,407', '1,887', '21,312,317,442,445,483,486,1926', '28,808', '1,368,398,406', '1,305', '1,7', '1,259', '30,222,225,340', '8,176', '1,922', '10,21,23,59', '1,7', '1,618', '73,92', '37,89', '29,46', '1,59', '1,677,747,778', '1,582', '40,124', '1,7', '1,188', '1,7', '1,11', '40,46', '1,7', '6,291', '1,693,730,1285', '47,534,545,705,710,986', '1,1054', '37,73,75,123,125,129,133,165,168,175,177,216,218,358,361,375,378,404,407,423,425,503,505,578,581,594,596,638', '1,22,24,28,30,39,41,53,55,132,134,144,146,265,267,271,274,344,347,357,359,375,378,384,386,414,416,494,497,608,611,634,637,684,687,706,708,724,726,901,904,954,957,982,984,1072,1075,1124,1126,1129,1132,1206,1209,1234,1236,1291', '1,149', '1,317', '1,72', '1,706'], 'nonprodsw': 0, 'tfileoutfiles': ['TagAndProbe_eraD.root'], 'oneEventMode': 0, 'debugfilename': 'd463b2a0a00ca744a73c151e7567c27c8a74df6e3c130032a1062b93ec6a6d2b.tar.gz', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc630', 'totalunits': 0, 'splitalgo': 'LumiBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'TagAndProbe_eraD'} 
+DEBUG 2018-01-28 19:04:41,811: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=1&useparent=0&asyncdest=T2_CH_CERN&algoargs=1000&cachefilename=776cbe14decbc3cc400a32dfe3218538b8c4f5e1e480a9e12ac2851056b3f672.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_9_4_0&primarydataset=&inputdata=%2FSingleMuon%2FRun2017D-PromptReco-v1%2FMINIAOD&lfn=%2Fstore%2Fuser%2Fpsiddire%2F&dryrun=0&workflow=crab_TagAndProbeeraD&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=d463b2a0a00ca744a73c151e7567c27c8a74df6e3c130032a1062b93ec6a6d2b.tar.gz&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc630&totalunits=0&splitalgo=LumiBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=TagAndProbe_eraD&tfileoutfiles=TagAndProbe_eraD.root&runs=302031&runs=302033&runs=302034&runs=302037&runs=302038&runs=302040&runs=302041&runs=302042&runs=302043&runs=302131&runs=302159&runs=302163&runs=302165&runs=302166&runs=302225&runs=302228&runs=302229&runs=302240&runs=302262&runs=302263&runs=302277&runs=302279&runs=302280&runs=302322&runs=302328&runs=302337&runs=302342&runs=302343&runs=302344&runs=302350&runs=302388&runs=302392&runs=302393&runs=302448&runs=302472&runs=302473&runs=302474&runs=302475&runs=302476&runs=302479&runs=302484&runs=302485&runs=302492&runs=302493&runs=302494&runs=302509&runs=302513&runs=302522&runs=302523&runs=302525&runs=302526&runs=302548&runs=302551&runs=302553&runs=302554&runs=302555&runs=302563&runs=302565&runs=302572&runs=302573&runs=302596&runs=302597&runs=302634&runs=302635&runs=302651&runs=302654&runs=302661&runs=302663&lumis=1%2C401%2C403%2C446%2C448%2C675%2C678%2C818&lumis=1%2C40%2C44%2C46&lumis=1%2C20&lumis=18%2C20&lumis=10%2C10&lumis=1%2C174&lumis=1%2C72&lumis=1%2C523&lumis=1%2C228&lumis=71%2C943&lumis=33%2C140&lumis=32%2C671%2C674%2C1230&lumis=1%2C85&lumis=1%2C16&lumis=54%2C133%2C136%2C923&lumis=58%2C78%2C81%2C293&lumis=1%2C457&lumis=1%2C960&lumis=37%2C471&lumis=1%2C1250&lumis=15%2C17%2C22%2C192%2C194%2C391&lumis=1%2C71&lumis=1%2C152&lumis=33%2C870&lumis=42%2C722&lumis=27%2C162&lumis=19%2C72&lumis=1%2C98&lumis=3%2C482&lumis=1%2C136&lumis=27%2C157%2C164%2C717&lumis=45%2C407&lumis=1%2C887&lumis=21%2C312%2C317%2C442%2C445%2C483%2C486%2C1926&lumis=28%2C808&lumis=1%2C368%2C398%2C406&lumis=1%2C305&lumis=1%2C7&lumis=1%2C259&lumis=30%2C222%2C225%2C340&lumis=8%2C176&lumis=1%2C922&lumis=10%2C21%2C23%2C59&lumis=1%2C7&lumis=1%2C618&lumis=73%2C92&lumis=37%2C89&lumis=29%2C46&lumis=1%2C59&lumis=1%2C677%2C747%2C778&lumis=1%2C582&lumis=40%2C124&lumis=1%2C7&lumis=1%2C188&lumis=1%2C7&lumis=1%2C11&lumis=40%2C46&lumis=1%2C7&lumis=6%2C291&lumis=1%2C693%2C730%2C1285&lumis=47%2C534%2C545%2C705%2C710%2C986&lumis=1%2C1054&lumis=37%2C73%2C75%2C123%2C125%2C129%2C133%2C165%2C168%2C175%2C177%2C216%2C218%2C358%2C361%2C375%2C378%2C404%2C407%2C423%2C425%2C503%2C505%2C578%2C581%2C594%2C596%2C638&lumis=1%2C22%2C24%2C28%2C30%2C39%2C41%2C53%2C55%2C132%2C134%2C144%2C146%2C265%2C267%2C271%2C274%2C344%2C347%2C357%2C359%2C375%2C378%2C384%2C386%2C414%2C416%2C494%2C497%2C608%2C611%2C634%2C637%2C684%2C687%2C706%2C708%2C724%2C726%2C901%2C904%2C954%2C957%2C982%2C984%2C1072%2C1075%2C1124%2C1126%2C1129%2C1132%2C1206%2C1209%2C1234%2C1236%2C1291&lumis=1%2C149&lumis=1%2C317&lumis=1%2C72&lumis=1%2C706
+DEBUG 2018-01-28 19:04:43,050: 	 Result: {u'result': [{u'RequestName': u'180128_180442:psiddire_crab_TagAndProbeeraD'}]}
+INFO 2018-01-28 19:04:43,053: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2018-01-28 19:04:43,054: 	 Task name: 180128_180442:psiddire_crab_TagAndProbeeraD
+INFO 2018-01-28 19:04:43,054: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2018-01-28 19:04:43,054: 	 About to return
+INFO 2018-01-28 19:04:43,057: 	 Log file is /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/crab.log
+DEBUG 2018-01-29 12:39:44,401: 	 Executing command: 'status'
+DEBUG 2018-01-29 12:39:44,404: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2018-01-29 12:39:44,520: 	 Checking credentials
+DEBUG 2018-01-29 12:39:44,520: 	 Proxy file /tmp/x509up_u93494 not found
+DEBUG 2018-01-29 12:39:44,520: 	 Creating new proxy for 24:00 hours with VO group '' and VO role 'NULL'.
+DEBUG 2018-01-29 12:40:00,873: 	 Executing : 
+ command : voms-proxy-init -voms cms:/cms -valid 24:00 -rfc
+ output : None
+ error: None
+ retcode : 0
+DEBUG 2018-01-29 12:40:03,204: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 86396
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:05,279: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 86393
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:07,790: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u93494 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:07,791: 	 Proxy created.
+DEBUG 2018-01-29 12:40:08,281: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:08,282: 	 Checking credentials
+DEBUG 2018-01-29 12:40:08,282: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-29 12:40:08,283: 	 Getting proxy life time left
+DEBUG 2018-01-29 12:40:12,695: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 86387
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:15,814: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 86383
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:15,815: 	 Proxy valid for 23:59:47 hours
+DEBUG 2018-01-29 12:40:17,430: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-01-29 12:40:17,670: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:17,670: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-01-29 12:40:17,670: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2018-01-29 12:40:18,294: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 627:40:45  (26.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:18,297: 	 Myproxy is valid: 2259645
+DEBUG 2018-01-29 12:40:18,297: 	 Command use: status
+DEBUG 2018-01-29 12:40:18,297: 	 Options use: ['-d', 'crab_projects/crab_TagAndProbeeraD/']
+DEBUG 2018-01-29 12:40:19,867: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2018-01-29 12:40:19,867: 	 Instance is prod
+DEBUG 2018-01-29 12:40:19,867: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-01-29 12:40:19,867: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-01-29 12:40:21,685: 	 Got information from server oracle database: {u'result': [u'180128_180442:psiddire_crab_TagAndProbeeraD', u'None', u'SUBMITTED', u'2018-01-28 18:04:43.043751', u'None', u'2018-01-28 18:05:25.883606', u'None', u'CMSSW_9_4_0', u'slc6_amd64_gcc630', u'/SingleMuon/Run2017D-PromptReco-v1/MINIAOD', u'[]', u'[]', u'LumiBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'lumis': ['1,401,403,446,448,675,678,818', '1,40,44,46', '1,20', '18,20', '10,10', '1,174', '1,72', '1,523', '1,228', '71,943', '33,140', '32,671,674,1230', '1,85', '1,16', '54,133,136,923', '58,78,81,293', '1,457', '1,960', '37,471', '1,1250', '15,17,22,192,194,391', '1,71', '1,152', '33,870', '42,722', '27,162', '19,72', '1,98', '3,482', '1,136', '27,157,164,717', '45,407', '1,887', '21,312,317,442,445,483,486,1926', '28,808', '1,368,398,406', '1,305', '1,7', '1,259', '30,222,225,340', '8,176', '1,922', '10,21,23,59', '1,7', '1,618', '73,92', '37,89', '29,46', '1,59', '1,677,747,778', '1,582', '40,124', '1,7', '1,188', '1,7', '1,11', '40,46', '1,7', '6,291', '1,693,730,1285', '47,534,545,705,710,986', '1,1054', '37,73,75,123,125,129,133,165,168,175,177,216,218,358,361,375,378,404,407,423,425,503,505,578,581,594,596,638', '1,22,24,28,30,39,41,53,55,132,134,144,146,265,267,271,274,344,347,357,359,375,378,384,386,414,416,494,497,608,611,634,637,684,687,706,708,724,726,901,904,954,957,982,984,1072,1075,1124,1126,1129,1132,1206,1209,1234,1236,1291', '1,149', '1,317', '1,72', '1,706'], 'runs': ['302031', '302033', '302034', '302037', '302038', '302040', '302041', '302042', '302043', '302131', '302159', '302163', '302165', '302166', '302225', '302228', '302229', '302240', '302262', '302263', '302277', '302279', '302280', '302322', '302328', '302337', '302342', '302343', '302344', '302350', '302388', '302392', '302393', '302448', '302472', '302473', '302474', '302475', '302476', '302479', '302484', '302485', '302492', '302493', '302494', '302509', '302513', '302522', '302523', '302525', '302526', '302548', '302551', '302553', '302554', '302555', '302563', '302565', '302572', '302573', '302596', '302597', '302634', '302635', '302651', '302654', '302661', '302663'], 'lumis_per_job': 1000}", u'0', u'776cbe14decbc3cc400a32dfe3218538b8c4f5e1e480a9e12ac2851056b3f672.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'psiddire', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy', u'cms', u'None', u'None', u'TagAndProbe_eraD-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1092/180128_180442:psiddire_crab_TagAndProbeeraD', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['TagAndProbe_eraD.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/psiddire/', u'F', u'None', u'F', u'F', u'F', u'None', u'SingleMuon', u'filetransfers', u'SUBMIT', u'18716104', u'd463b2a0a00ca744a73c151e7567c27c8a74df6e3c130032a1062b93ec6a6d2b.tar.gz', u'137.138.121.249', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2018-01-29 12:40:21,686: 	 CRAB project directory:		/afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD
+INFO 2018-01-29 12:40:21,686: 	 Task name:			180128_180442:psiddire_crab_TagAndProbeeraD
+INFO 2018-01-29 12:40:21,687: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2018-01-29 12:40:21,687: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-01-29 12:40:21,687: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/180128_180442%3Apsiddire_crab_TagAndProbeeraD
+INFO 2018-01-29 12:40:21,687: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=psiddire&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=180128_180442%3Apsiddire_crab_TagAndProbeeraD
+DEBUG 2018-01-29 12:40:21,688: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 18716104)
+DEBUG 2018-01-29 12:40:21,688: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1092/180128_180442:psiddire_crab_TagAndProbeeraD
+DEBUG 2018-01-29 12:40:23,315: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1092/180128_180442:psiddire_crab_TagAndProbeeraD
+DEBUG 2018-01-29 12:40:23,315: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1092/180128_180442:psiddire_crab_TagAndProbeeraD/status_cache
+DEBUG 2018-01-29 12:40:24,816: 	 Got information from status cache file: {'24': {'Retries': 0, 'WallDurations': [5848.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162739.0], 'JobIds': ['18716128.0'], 'EndTimes': [1517169027.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [607920], 'TotalUserCpuTimeHistory': [4840], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [581]}, '25': {'Retries': 0, 'WallDurations': [6524.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162739.0], 'JobIds': ['18716129.0'], 'EndTimes': [1517169704.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [619592], 'TotalUserCpuTimeHistory': [5677], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [320]}, '26': {'Retries': 0, 'WallDurations': [5217.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162739.0], 'JobIds': ['18716130.0'], 'EndTimes': [1517168397.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [626956], 'TotalUserCpuTimeHistory': [3843], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [450]}, '27': {'Retries': 0, 'WallDurations': [6693.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162739.0], 'JobIds': ['18716131.0'], 'EndTimes': [1517169873.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [632736], 'TotalUserCpuTimeHistory': [5491], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [679]}, '20': {'Retries': 0, 'WallDurations': [6572.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716125.0'], 'EndTimes': [1517169751.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [611448], 'TotalUserCpuTimeHistory': [5677], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [328]}, '21': {'Retries': 0, 'WallDurations': [9427.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162739.0], 'JobIds': ['18716133.0'], 'EndTimes': [1517172607.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [591900], 'TotalUserCpuTimeHistory': [8140], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [809]}, '22': {'Retries': 0, 'WallDurations': [7899.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716126.0'], 'EndTimes': [1517171078.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [611460], 'TotalUserCpuTimeHistory': [6784], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [699]}, '23': {'Retries': 0, 'WallDurations': [7593.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162739.0], 'JobIds': ['18716127.0'], 'EndTimes': [1517170772.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [634792], 'TotalUserCpuTimeHistory': [6357], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [719]}, '28': {'Retries': 0, 'WallDurations': [603.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162739.0], 'JobIds': ['18716132.0'], 'EndTimes': [1517163783.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [594324], 'TotalUserCpuTimeHistory': [460], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [44]}, '1': {'Retries': 0, 'WallDurations': [6539.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162736.0], 'JobIds': ['18716107.0'], 'EndTimes': [1517169719.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [614572], 'TotalUserCpuTimeHistory': [5433], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [597]}, '3': {'Retries': 0, 'WallDurations': [7837.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162736.0], 'JobIds': ['18716109.0'], 'EndTimes': [1517171017.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [587176], 'TotalUserCpuTimeHistory': [6792], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [592]}, '2': {'Retries': 0, 'WallDurations': [4455.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162736.0], 'JobIds': ['18716108.0'], 'EndTimes': [1517167635.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [618284], 'TotalUserCpuTimeHistory': [3666], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [427]}, '5': {'Retries': 0, 'WallDurations': [4988.0], 'StartTimes': [1517163181.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716111.0'], 'EndTimes': [1517168169.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [616432], 'TotalUserCpuTimeHistory': [3510], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [376]}, '4': {'Retries': 0, 'WallDurations': [4351.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162736.0], 'JobIds': ['18716110.0'], 'EndTimes': [1517167531.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [611280], 'TotalUserCpuTimeHistory': [3561], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [427]}, '7': {'Retries': 0, 'WallDurations': [7653.0], 'StartTimes': [1517163181.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716112.0'], 'EndTimes': [1517170834.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [544384], 'TotalUserCpuTimeHistory': [4878], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [491]}, '6': {'Retries': 0, 'WallDurations': [8841.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162736.0], 'JobIds': ['18716106.0'], 'EndTimes': [1517172020.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [599868], 'TotalUserCpuTimeHistory': [7616], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [709]}, '9': {'Retries': 0, 'WallDurations': [7372.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716114.0'], 'EndTimes': [1517170551.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [602268], 'TotalUserCpuTimeHistory': [6387], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [563]}, '8': {'Retries': 0, 'WallDurations': [5122.0], 'StartTimes': [1517163178.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716113.0'], 'EndTimes': [1517168300.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [629040], 'TotalUserCpuTimeHistory': [4398], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [252]}, '11': {'Retries': 0, 'WallDurations': [4986.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716116.0'], 'EndTimes': [1517168165.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [593984], 'TotalUserCpuTimeHistory': [4314], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [238]}, '10': {'Retries': 0, 'WallDurations': [6051.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716115.0'], 'EndTimes': [1517169230.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [610284], 'TotalUserCpuTimeHistory': [5086], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [562]}, '13': {'Retries': 0, 'WallDurations': [7574.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716118.0'], 'EndTimes': [1517170753.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [621368], 'TotalUserCpuTimeHistory': [6348], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [708]}, '12': {'Retries': 0, 'WallDurations': [7065.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716117.0'], 'EndTimes': [1517170244.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [640288], 'TotalUserCpuTimeHistory': [5906], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [338]}, '15': {'Retries': 0, 'WallDurations': [7898.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716120.0'], 'EndTimes': [1517171078.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [626588], 'TotalUserCpuTimeHistory': [5413], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [289]}, '14': {'Retries': 0, 'WallDurations': [7301.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716119.0'], 'EndTimes': [1517170481.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [597996], 'TotalUserCpuTimeHistory': [6156], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [693]}, '17': {'Retries': 0, 'WallDurations': [8195.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716122.0'], 'EndTimes': [1517171374.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [606300], 'TotalUserCpuTimeHistory': [6970], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [743]}, '16': {'Retries': 0, 'WallDurations': [8492.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716121.0'], 'EndTimes': [1517171671.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [607948], 'TotalUserCpuTimeHistory': [7072], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [789]}, '19': {'Retries': 0, 'WallDurations': [8966.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716124.0'], 'EndTimes': [1517172145.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [609316], 'TotalUserCpuTimeHistory': [7815], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [727]}, '18': {'Retries': 0, 'WallDurations': [9731.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716123.0'], 'EndTimes': [1517172911.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [603816], 'TotalUserCpuTimeHistory': [8200], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [895]}}
+INFO 2018-01-29 12:40:24,816: 	 Status on the scheduler:	COMPLETED
+INFO 2018-01-29 12:40:24,817: 	 
+Jobs status:                    finished      100.0% (28/28)
+INFO 2018-01-29 12:40:26,182: 	 
+No publication information available yet
+INFO 2018-01-29 12:40:26,752: 	 Log file is /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/crab.log
+DEBUG 2018-01-29 12:40:37,125: 	 Executing command: 'getoutput'
+DEBUG 2018-01-29 12:40:37,125: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2018-01-29 12:40:37,139: 	 Checking credentials
+DEBUG 2018-01-29 12:40:37,140: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-29 12:40:37,140: 	 Getting proxy life time left
+DEBUG 2018-01-29 12:40:40,261: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 86359
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:43,486: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 86355
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:43,487: 	 Proxy valid for 23:59:19 hours
+DEBUG 2018-01-29 12:40:43,490: 	 Using VO group '' and VO role 'NULL' as written in the request cache file for this task.
+DEBUG 2018-01-29 12:40:43,744: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:43,745: 	 Checking credentials
+DEBUG 2018-01-29 12:40:43,746: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-29 12:40:43,746: 	 Getting proxy life time left
+DEBUG 2018-01-29 12:40:45,900: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 86354
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:48,736: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 86350
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:48,736: 	 Proxy valid for 23:59:14 hours
+DEBUG 2018-01-29 12:40:50,895: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u93494 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:52,487: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-01-29 12:40:52,714: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:52,714: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-01-29 12:40:52,714: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2018-01-29 12:40:53,036: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 627:40:11  (26.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:40:53,038: 	 Myproxy is valid: 2259611
+DEBUG 2018-01-29 12:40:53,038: 	 Command use: getoutput
+DEBUG 2018-01-29 12:40:53,039: 	 Options use: ['-d', 'crab_projects/crab_TagAndProbeeraD/']
+DEBUG 2018-01-29 12:40:54,639: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2018-01-29 12:40:54,640: 	 Instance is prod
+DEBUG 2018-01-29 12:40:54,640: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-01-29 12:40:54,640: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-01-29 12:40:54,640: 	 Executing command: 'status'
+DEBUG 2018-01-29 12:40:54,640: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2018-01-29 12:40:54,656: 	 Checking credentials
+DEBUG 2018-01-29 12:40:54,656: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-29 12:40:54,657: 	 Getting proxy life time left
+DEBUG 2018-01-29 12:40:58,030: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 86342
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:41:00,609: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 86338
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:41:00,610: 	 Proxy valid for 23:59:02 hours
+DEBUG 2018-01-29 12:41:00,932: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:41:00,932: 	 Checking credentials
+DEBUG 2018-01-29 12:41:00,933: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-29 12:41:00,934: 	 Getting proxy life time left
+DEBUG 2018-01-29 12:41:03,077: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 86336
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:41:05,603: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 86333
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:41:05,604: 	 Proxy valid for 23:58:56 hours
+DEBUG 2018-01-29 12:41:07,196: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-01-29 12:41:07,532: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:41:07,532: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-01-29 12:41:07,532: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2018-01-29 12:41:07,964: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 627:39:56  (26.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:41:07,965: 	 Myproxy is valid: 2259596
+DEBUG 2018-01-29 12:41:07,965: 	 Command use: status
+DEBUG 2018-01-29 12:41:07,965: 	 Options use: []
+DEBUG 2018-01-29 12:41:09,559: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2018-01-29 12:41:09,559: 	 Instance is prod
+DEBUG 2018-01-29 12:41:09,559: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-01-29 12:41:09,559: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-01-29 12:41:10,977: 	 Got information from server oracle database: {u'result': [u'180128_180442:psiddire_crab_TagAndProbeeraD', u'None', u'SUBMITTED', u'2018-01-28 18:04:43.043751', u'None', u'2018-01-28 18:05:25.883606', u'None', u'CMSSW_9_4_0', u'slc6_amd64_gcc630', u'/SingleMuon/Run2017D-PromptReco-v1/MINIAOD', u'[]', u'[]', u'LumiBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'lumis': ['1,401,403,446,448,675,678,818', '1,40,44,46', '1,20', '18,20', '10,10', '1,174', '1,72', '1,523', '1,228', '71,943', '33,140', '32,671,674,1230', '1,85', '1,16', '54,133,136,923', '58,78,81,293', '1,457', '1,960', '37,471', '1,1250', '15,17,22,192,194,391', '1,71', '1,152', '33,870', '42,722', '27,162', '19,72', '1,98', '3,482', '1,136', '27,157,164,717', '45,407', '1,887', '21,312,317,442,445,483,486,1926', '28,808', '1,368,398,406', '1,305', '1,7', '1,259', '30,222,225,340', '8,176', '1,922', '10,21,23,59', '1,7', '1,618', '73,92', '37,89', '29,46', '1,59', '1,677,747,778', '1,582', '40,124', '1,7', '1,188', '1,7', '1,11', '40,46', '1,7', '6,291', '1,693,730,1285', '47,534,545,705,710,986', '1,1054', '37,73,75,123,125,129,133,165,168,175,177,216,218,358,361,375,378,404,407,423,425,503,505,578,581,594,596,638', '1,22,24,28,30,39,41,53,55,132,134,144,146,265,267,271,274,344,347,357,359,375,378,384,386,414,416,494,497,608,611,634,637,684,687,706,708,724,726,901,904,954,957,982,984,1072,1075,1124,1126,1129,1132,1206,1209,1234,1236,1291', '1,149', '1,317', '1,72', '1,706'], 'runs': ['302031', '302033', '302034', '302037', '302038', '302040', '302041', '302042', '302043', '302131', '302159', '302163', '302165', '302166', '302225', '302228', '302229', '302240', '302262', '302263', '302277', '302279', '302280', '302322', '302328', '302337', '302342', '302343', '302344', '302350', '302388', '302392', '302393', '302448', '302472', '302473', '302474', '302475', '302476', '302479', '302484', '302485', '302492', '302493', '302494', '302509', '302513', '302522', '302523', '302525', '302526', '302548', '302551', '302553', '302554', '302555', '302563', '302565', '302572', '302573', '302596', '302597', '302634', '302635', '302651', '302654', '302661', '302663'], 'lumis_per_job': 1000}", u'0', u'776cbe14decbc3cc400a32dfe3218538b8c4f5e1e480a9e12ac2851056b3f672.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'psiddire', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy', u'cms', u'None', u'None', u'TagAndProbe_eraD-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1092/180128_180442:psiddire_crab_TagAndProbeeraD', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['TagAndProbe_eraD.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/psiddire/', u'F', u'None', u'F', u'F', u'F', u'None', u'SingleMuon', u'filetransfers', u'SUBMIT', u'18716104', u'd463b2a0a00ca744a73c151e7567c27c8a74df6e3c130032a1062b93ec6a6d2b.tar.gz', u'137.138.121.249', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2018-01-29 12:41:10,979: 	 CRAB project directory:		/afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD
+INFO 2018-01-29 12:41:10,979: 	 Task name:			180128_180442:psiddire_crab_TagAndProbeeraD
+INFO 2018-01-29 12:41:10,979: 	 Grid scheduler:			crab3@vocms0144.cern.ch
+INFO 2018-01-29 12:41:10,979: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-01-29 12:41:10,980: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/180128_180442%3Apsiddire_crab_TagAndProbeeraD
+INFO 2018-01-29 12:41:10,980: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=psiddire&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=180128_180442%3Apsiddire_crab_TagAndProbeeraD
+DEBUG 2018-01-29 12:41:10,980: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 18716104)
+DEBUG 2018-01-29 12:41:10,980: 	 Webdir is located at http://vocms0144.cern.ch/mon/cms1092/180128_180442:psiddire_crab_TagAndProbeeraD
+DEBUG 2018-01-29 12:41:12,444: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0144/cms1092/180128_180442:psiddire_crab_TagAndProbeeraD
+DEBUG 2018-01-29 12:41:12,444: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0144/cms1092/180128_180442:psiddire_crab_TagAndProbeeraD/status_cache
+DEBUG 2018-01-29 12:41:14,039: 	 Got information from status cache file: {'24': {'Retries': 0, 'WallDurations': [5848.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162739.0], 'JobIds': ['18716128.0'], 'EndTimes': [1517169027.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [607920], 'TotalUserCpuTimeHistory': [4840], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [581]}, '25': {'Retries': 0, 'WallDurations': [6524.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162739.0], 'JobIds': ['18716129.0'], 'EndTimes': [1517169704.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [619592], 'TotalUserCpuTimeHistory': [5677], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [320]}, '26': {'Retries': 0, 'WallDurations': [5217.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162739.0], 'JobIds': ['18716130.0'], 'EndTimes': [1517168397.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [626956], 'TotalUserCpuTimeHistory': [3843], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [450]}, '27': {'Retries': 0, 'WallDurations': [6693.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162739.0], 'JobIds': ['18716131.0'], 'EndTimes': [1517169873.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [632736], 'TotalUserCpuTimeHistory': [5491], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [679]}, '20': {'Retries': 0, 'WallDurations': [6572.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716125.0'], 'EndTimes': [1517169751.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [611448], 'TotalUserCpuTimeHistory': [5677], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [328]}, '21': {'Retries': 0, 'WallDurations': [9427.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162739.0], 'JobIds': ['18716133.0'], 'EndTimes': [1517172607.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [591900], 'TotalUserCpuTimeHistory': [8140], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [809]}, '22': {'Retries': 0, 'WallDurations': [7899.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716126.0'], 'EndTimes': [1517171078.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [611460], 'TotalUserCpuTimeHistory': [6784], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [699]}, '23': {'Retries': 0, 'WallDurations': [7593.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162739.0], 'JobIds': ['18716127.0'], 'EndTimes': [1517170772.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [634792], 'TotalUserCpuTimeHistory': [6357], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [719]}, '28': {'Retries': 0, 'WallDurations': [603.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162739.0], 'JobIds': ['18716132.0'], 'EndTimes': [1517163783.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [594324], 'TotalUserCpuTimeHistory': [460], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [44]}, '1': {'Retries': 0, 'WallDurations': [6539.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162736.0], 'JobIds': ['18716107.0'], 'EndTimes': [1517169719.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [614572], 'TotalUserCpuTimeHistory': [5433], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [597]}, '3': {'Retries': 0, 'WallDurations': [7837.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162736.0], 'JobIds': ['18716109.0'], 'EndTimes': [1517171017.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [587176], 'TotalUserCpuTimeHistory': [6792], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [592]}, '2': {'Retries': 0, 'WallDurations': [4455.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162736.0], 'JobIds': ['18716108.0'], 'EndTimes': [1517167635.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [618284], 'TotalUserCpuTimeHistory': [3666], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [427]}, '5': {'Retries': 0, 'WallDurations': [4988.0], 'StartTimes': [1517163181.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716111.0'], 'EndTimes': [1517168169.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [616432], 'TotalUserCpuTimeHistory': [3510], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [376]}, '4': {'Retries': 0, 'WallDurations': [4351.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162736.0], 'JobIds': ['18716110.0'], 'EndTimes': [1517167531.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [611280], 'TotalUserCpuTimeHistory': [3561], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [427]}, '7': {'Retries': 0, 'WallDurations': [7653.0], 'StartTimes': [1517163181.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716112.0'], 'EndTimes': [1517170834.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [544384], 'TotalUserCpuTimeHistory': [4878], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [491]}, '6': {'Retries': 0, 'WallDurations': [8841.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162736.0], 'JobIds': ['18716106.0'], 'EndTimes': [1517172020.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [599868], 'TotalUserCpuTimeHistory': [7616], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [709]}, '9': {'Retries': 0, 'WallDurations': [7372.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716114.0'], 'EndTimes': [1517170551.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [602268], 'TotalUserCpuTimeHistory': [6387], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [563]}, '8': {'Retries': 0, 'WallDurations': [5122.0], 'StartTimes': [1517163178.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716113.0'], 'EndTimes': [1517168300.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [629040], 'TotalUserCpuTimeHistory': [4398], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [252]}, '11': {'Retries': 0, 'WallDurations': [4986.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716116.0'], 'EndTimes': [1517168165.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [593984], 'TotalUserCpuTimeHistory': [4314], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [238]}, '10': {'Retries': 0, 'WallDurations': [6051.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716115.0'], 'EndTimes': [1517169230.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [610284], 'TotalUserCpuTimeHistory': [5086], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [562]}, '13': {'Retries': 0, 'WallDurations': [7574.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716118.0'], 'EndTimes': [1517170753.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [621368], 'TotalUserCpuTimeHistory': [6348], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [708]}, '12': {'Retries': 0, 'WallDurations': [7065.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162737.0], 'JobIds': ['18716117.0'], 'EndTimes': [1517170244.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [640288], 'TotalUserCpuTimeHistory': [5906], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [338]}, '15': {'Retries': 0, 'WallDurations': [7898.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716120.0'], 'EndTimes': [1517171078.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [626588], 'TotalUserCpuTimeHistory': [5413], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [289]}, '14': {'Retries': 0, 'WallDurations': [7301.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716119.0'], 'EndTimes': [1517170481.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [597996], 'TotalUserCpuTimeHistory': [6156], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [693]}, '17': {'Retries': 0, 'WallDurations': [8195.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716122.0'], 'EndTimes': [1517171374.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [606300], 'TotalUserCpuTimeHistory': [6970], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [743]}, '16': {'Retries': 0, 'WallDurations': [8492.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716121.0'], 'EndTimes': [1517171671.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [607948], 'TotalUserCpuTimeHistory': [7072], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [789]}, '19': {'Retries': 0, 'WallDurations': [8966.0], 'StartTimes': [1517163179.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716124.0'], 'EndTimes': [1517172145.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [609316], 'TotalUserCpuTimeHistory': [7815], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [727]}, '18': {'Retries': 0, 'WallDurations': [9731.0], 'StartTimes': [1517163180.0], 'SubmitTimes': [1517162738.0], 'JobIds': ['18716123.0'], 'EndTimes': [1517172911.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [603816], 'TotalUserCpuTimeHistory': [8200], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [895]}}
+INFO 2018-01-29 12:41:14,040: 	 Status on the scheduler:	COMPLETED
+INFO 2018-01-29 12:41:14,042: 	 
+Jobs status:                    finished      100.0% (28/28)
+INFO 2018-01-29 12:41:15,525: 	 
+No publication information available yet
+DEBUG 2018-01-29 12:41:16,940: 	 Server result: {u'result': [u'180128_180442:psiddire_crab_TagAndProbeeraD', u'None', u'SUBMITTED', u'2018-01-28 18:04:43.043751', u'None', u'2018-01-28 18:05:25.883606', u'None', u'CMSSW_9_4_0', u'slc6_amd64_gcc630', u'/SingleMuon/Run2017D-PromptReco-v1/MINIAOD', u'[]', u'[]', u'LumiBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'lumis': ['1,401,403,446,448,675,678,818', '1,40,44,46', '1,20', '18,20', '10,10', '1,174', '1,72', '1,523', '1,228', '71,943', '33,140', '32,671,674,1230', '1,85', '1,16', '54,133,136,923', '58,78,81,293', '1,457', '1,960', '37,471', '1,1250', '15,17,22,192,194,391', '1,71', '1,152', '33,870', '42,722', '27,162', '19,72', '1,98', '3,482', '1,136', '27,157,164,717', '45,407', '1,887', '21,312,317,442,445,483,486,1926', '28,808', '1,368,398,406', '1,305', '1,7', '1,259', '30,222,225,340', '8,176', '1,922', '10,21,23,59', '1,7', '1,618', '73,92', '37,89', '29,46', '1,59', '1,677,747,778', '1,582', '40,124', '1,7', '1,188', '1,7', '1,11', '40,46', '1,7', '6,291', '1,693,730,1285', '47,534,545,705,710,986', '1,1054', '37,73,75,123,125,129,133,165,168,175,177,216,218,358,361,375,378,404,407,423,425,503,505,578,581,594,596,638', '1,22,24,28,30,39,41,53,55,132,134,144,146,265,267,271,274,344,347,357,359,375,378,384,386,414,416,494,497,608,611,634,637,684,687,706,708,724,726,901,904,954,957,982,984,1072,1075,1124,1126,1129,1132,1206,1209,1234,1236,1291', '1,149', '1,317', '1,72', '1,706'], 'runs': ['302031', '302033', '302034', '302037', '302038', '302040', '302041', '302042', '302043', '302131', '302159', '302163', '302165', '302166', '302225', '302228', '302229', '302240', '302262', '302263', '302277', '302279', '302280', '302322', '302328', '302337', '302342', '302343', '302344', '302350', '302388', '302392', '302393', '302448', '302472', '302473', '302474', '302475', '302476', '302479', '302484', '302485', '302492', '302493', '302494', '302509', '302513', '302522', '302523', '302525', '302526', '302548', '302551', '302553', '302554', '302555', '302563', '302565', '302572', '302573', '302596', '302597', '302634', '302635', '302651', '302654', '302661', '302663'], 'lumis_per_job': 1000}", u'0', u'776cbe14decbc3cc400a32dfe3218538b8c4f5e1e480a9e12ac2851056b3f672.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'psiddire', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy', u'cms', u'None', u'None', u'TagAndProbe_eraD-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0144.cern.ch/mon/cms1092/180128_180442:psiddire_crab_TagAndProbeeraD', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['TagAndProbe_eraD.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0144.cern.ch', u'F', u'[]', u'T', u'/store/user/psiddire/', u'F', u'None', u'F', u'F', u'F', u'None', u'SingleMuon', u'filetransfers', u'SUBMIT', u'18716104', u'd463b2a0a00ca744a73c151e7567c27c8a74df6e3c130032a1062b93ec6a6d2b.tar.gz', u'137.138.121.249', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+DEBUG 2018-01-29 12:41:16,940: 	 Retrieving locations for task 180128_180442:psiddire_crab_TagAndProbeeraD
+DEBUG 2018-01-29 12:41:16,940: 	 Retrieving all file locations
+DEBUG 2018-01-29 12:41:16,940: 	 Retrieving jobs [('jobids', '24'), ('jobids', '25'), ('jobids', '26'), ('jobids', '27'), ('jobids', '20'), ('jobids', '21'), ('jobids', '22'), ('jobids', '23'), ('jobids', '28'), ('jobids', '1'), ('jobids', '3'), ('jobids', '2'), ('jobids', '5'), ('jobids', '4'), ('jobids', '7'), ('jobids', '6'), ('jobids', '9'), ('jobids', '8'), ('jobids', '11'), ('jobids', '10'), ('jobids', '13'), ('jobids', '12'), ('jobids', '15'), ('jobids', '14'), ('jobids', '17'), ('jobids', '16'), ('jobids', '19'), ('jobids', '18')]
+DEBUG 2018-01-29 12:41:18,673: 	 Server result: {u'result': [{u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'3fe5c03d', u'cksum': 2581534236, u'md5': u'3fe5c03d'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_18.root', u'site': u'T2_CH_CERN', u'jobid': u'18', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_18.root', u'size': 34534, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'dbb50cc3', u'cksum': 1727859328, u'md5': u'dbb50cc3'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_21.root', u'site': u'T2_CH_CERN', u'jobid': u'21', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_21.root', u'size': 34034, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'38b56b1', u'cksum': 1494369947, u'md5': u'38b56b1'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_19.root', u'site': u'T2_CH_CERN', u'jobid': u'19', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_19.root', u'size': 35036, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'b9db5cb1', u'cksum': 2843366267, u'md5': u'b9db5cb1'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_6.root', u'site': u'T2_CH_CERN', u'jobid': u'6', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_6.root', u'size': 34707, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'5305f9e3', u'cksum': 2104273558, u'md5': u'5305f9e3'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_16.root', u'site': u'T2_CH_CERN', u'jobid': u'16', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_16.root', u'size': 34252, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'26b21443', u'cksum': 2517529698, u'md5': u'26b21443'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_17.root', u'site': u'T2_CH_CERN', u'jobid': u'17', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_17.root', u'size': 34637, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'fc9779f3', u'cksum': 4191521301, u'md5': u'fc9779f3'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_22.root', u'site': u'T2_CH_CERN', u'jobid': u'22', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_22.root', u'size': 33126, u'directstageout': u'F'}, {u'tmpsite': u'T2_DE_DESY', u'checksum': {u'adler32': u'd5d81f88', u'cksum': 1955784504, u'md5': u'd5d81f88'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_15.root', u'site': u'T2_CH_CERN', u'jobid': u'15', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_15.root', u'size': 33829, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'3c335f24', u'cksum': 2432018484, u'md5': u'3c335f24'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_3.root', u'site': u'T2_CH_CERN', u'jobid': u'3', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_3.root', u'size': 35243, u'directstageout': u'F'}, {u'tmpsite': u'T2_DE_DESY', u'checksum': {u'adler32': u'e788f342', u'cksum': 2653715260, u'md5': u'e788f342'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_7.root', u'site': u'T2_CH_CERN', u'jobid': u'7', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_7.root', u'size': 34921, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'6431b348', u'cksum': 9393304, u'md5': u'6431b348'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_23.root', u'site': u'T2_CH_CERN', u'jobid': u'23', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_23.root', u'size': 34201, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'9a8ab3ac', u'cksum': 3150684062, u'md5': u'9a8ab3ac'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_13.root', u'site': u'T2_CH_CERN', u'jobid': u'13', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_13.root', u'size': 34238, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'ea1ed877', u'cksum': 4067439062, u'md5': u'ea1ed877'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_9.root', u'site': u'T2_CH_CERN', u'jobid': u'9', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_9.root', u'size': 35023, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'700a57c3', u'cksum': 722369812, u'md5': u'700a57c3'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_14.root', u'site': u'T2_CH_CERN', u'jobid': u'14', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_14.root', u'size': 34088, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'fde0eaad', u'cksum': 1616537153, u'md5': u'fde0eaad'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_12.root', u'site': u'T2_CH_CERN', u'jobid': u'12', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_12.root', u'size': 34548, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'112831db', u'cksum': 1121933573, u'md5': u'112831db'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_27.root', u'site': u'T2_CH_CERN', u'jobid': u'27', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_27.root', u'size': 34063, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'8d84088e', u'cksum': 3295009396, u'md5': u'8d84088e'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_20.root', u'site': u'T2_CH_CERN', u'jobid': u'20', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_20.root', u'size': 33458, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'395310f2', u'cksum': 1817663650, u'md5': u'395310f2'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_1.root', u'site': u'T2_CH_CERN', u'jobid': u'1', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_1.root', u'size': 34186, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'b952e506', u'cksum': 3377079515, u'md5': u'b952e506'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_25.root', u'site': u'T2_CH_CERN', u'jobid': u'25', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_25.root', u'size': 34328, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'23d55ba2', u'cksum': 1356635196, u'md5': u'23d55ba2'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_10.root', u'site': u'T2_CH_CERN', u'jobid': u'10', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_10.root', u'size': 34129, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'48a0c651', u'cksum': 3434204714, u'md5': u'48a0c651'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_24.root', u'site': u'T2_CH_CERN', u'jobid': u'24', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_24.root', u'size': 32668, u'directstageout': u'F'}, {u'tmpsite': u'T2_DE_DESY', u'checksum': {u'adler32': u'1fe48990', u'cksum': 1855565703, u'md5': u'1fe48990'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_26.root', u'site': u'T2_CH_CERN', u'jobid': u'26', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_26.root', u'size': 33983, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'a4ccd868', u'cksum': 573365817, u'md5': u'a4ccd868'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_8.root', u'site': u'T2_CH_CERN', u'jobid': u'8', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_8.root', u'size': 33761, u'directstageout': u'F'}, {u'tmpsite': u'T2_DE_DESY', u'checksum': {u'adler32': u'cbcc82ae', u'cksum': 2937252163, u'md5': u'cbcc82ae'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_5.root', u'site': u'T2_CH_CERN', u'jobid': u'5', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_5.root', u'size': 35275, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'12eaeeac', u'cksum': 2495205015, u'md5': u'12eaeeac'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_11.root', u'site': u'T2_CH_CERN', u'jobid': u'11', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_11.root', u'size': 34109, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'f71cc91f', u'cksum': 2549921482, u'md5': u'f71cc91f'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_2.root', u'site': u'T2_CH_CERN', u'jobid': u'2', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_2.root', u'size': 34170, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'ec9f2569', u'cksum': 2909336085, u'md5': u'ec9f2569'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_4.root', u'site': u'T2_CH_CERN', u'jobid': u'4', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_4.root', u'size': 34412, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'b38ae3f4', u'cksum': 2638852420, u'md5': u'b38ae3f4'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_28.root', u'site': u'T2_CH_CERN', u'jobid': u'28', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_28.root', u'size': 30701, u'directstageout': u'F'}]}
+DEBUG 2018-01-29 12:41:18,675: 	 Service initialised ({'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'key': '/tmp/x509up_u93494', 'maxcachereuse': 24.0, 'cachepath': '/tmp/psiddire/.wmcore_cache_RC9ytA/cmsweb.cern.ch', 'inputdata': {}, 'cert': '/tmp/x509up_u93494', 'timeout': 300, 'service_name': 'PhEDEx', 'requests': {'content_type': 'application/x-www-form-urlencoded', 'cacheduration': 0, 'host': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'accept_type': 'text/html', 'key': '/tmp/x509up_u93494', 'deleteCacheOnExit': <WMCore.Services.Requests.TempDirectory object at 0x7f36b4336dd0>, 'endpoint_components': ParseResult(scheme='https', netloc='cmsweb.cern.ch', path='/phedex/datasvc/json/prod/', params='', query='', fragment=''), 'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'pycurl': True, 'cachepath': '/tmp/psiddire/.wmcore_cache_RC9ytA/cmsweb.cern.ch', 'cert': '/tmp/x509up_u93494', 'timeout': 300, 'req_cache_path': '/tmp/psiddire/.wmcore_cache_RC9ytA/cmsweb.cern.ch/.cache', 'logger': <logging.Logger object at 0x7f36b4317550>}, 'logger': <logging.Logger object at 0x7f36b4317550>, 'cacheduration': 0, 'method': None, 'pycurl': True}):
+	 host: cmsweb.cern.ch, basepath: https://cmsweb.cern.ch/phedex/datasvc/json/prod/ (text/html)
+	 cache: /tmp/psiddire/.wmcore_cache_RC9ytA/cmsweb.cern.ch (duration 0 hours, max reuse 24.0 hours)
+DEBUG 2018-01-29 12:41:18,675: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_18.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:20,196: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_21.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:21,545: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_19.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:23,012: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_6.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:24,540: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_16.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:26,107: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_17.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:27,934: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_22.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:29,924: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_15.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:31,708: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_3.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:33,354: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_7.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:34,944: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_23.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:36,693: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_13.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:38,854: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_9.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:41,388: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_14.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:43,953: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_12.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:46,680: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_27.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:48,740: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_20.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:50,313: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_1.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:53,232: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_25.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:55,260: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_10.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:57,309: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_24.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:41:58,923: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_26.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:42:02,697: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_8.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:42:04,584: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_5.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:42:06,373: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_11.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:42:08,255: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_2.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:42:10,125: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_4.root', 'protocol': 'srmv2'}
+DEBUG 2018-01-29 12:42:11,855: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_28.root', 'protocol': 'srmv2'}
+INFO 2018-01-29 12:42:13,626: 	 Setting the destination to /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results 
+INFO 2018-01-29 12:42:13,626: 	 Retrieving 28 files
+DEBUG 2018-01-29 12:42:13,626: 	 Executing command: 'remote_copy'
+DEBUG 2018-01-29 12:42:13,626: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2018-01-29 12:42:13,638: 	 Skipping proxy creation
+DEBUG 2018-01-29 12:42:13,638: 	 Command use: remote_copy
+DEBUG 2018-01-29 12:42:13,639: 	 Options use: ['--destination', '/afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results', '--input', [{u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'3fe5c03d', u'cksum': 2581534236, u'md5': u'3fe5c03d'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_18.root', u'site': u'T2_CH_CERN', u'jobid': u'18', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_18.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_18.root', u'size': 34534, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'dbb50cc3', u'cksum': 1727859328, u'md5': u'dbb50cc3'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_21.root', u'site': u'T2_CH_CERN', u'jobid': u'21', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_21.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_21.root', u'size': 34034, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'38b56b1', u'cksum': 1494369947, u'md5': u'38b56b1'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_19.root', u'site': u'T2_CH_CERN', u'jobid': u'19', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_19.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_19.root', u'size': 35036, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'b9db5cb1', u'cksum': 2843366267, u'md5': u'b9db5cb1'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_6.root', u'site': u'T2_CH_CERN', u'jobid': u'6', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_6.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_6.root', u'size': 34707, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'5305f9e3', u'cksum': 2104273558, u'md5': u'5305f9e3'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_16.root', u'site': u'T2_CH_CERN', u'jobid': u'16', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_16.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_16.root', u'size': 34252, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'26b21443', u'cksum': 2517529698, u'md5': u'26b21443'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_17.root', u'site': u'T2_CH_CERN', u'jobid': u'17', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_17.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_17.root', u'size': 34637, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'fc9779f3', u'cksum': 4191521301, u'md5': u'fc9779f3'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_22.root', u'site': u'T2_CH_CERN', u'jobid': u'22', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_22.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_22.root', u'size': 33126, u'directstageout': u'F'}, {u'tmpsite': u'T2_DE_DESY', u'checksum': {u'adler32': u'd5d81f88', u'cksum': 1955784504, u'md5': u'd5d81f88'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_15.root', u'site': u'T2_CH_CERN', u'jobid': u'15', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_15.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_15.root', u'size': 33829, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'3c335f24', u'cksum': 2432018484, u'md5': u'3c335f24'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_3.root', u'site': u'T2_CH_CERN', u'jobid': u'3', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_3.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_3.root', u'size': 35243, u'directstageout': u'F'}, {u'tmpsite': u'T2_DE_DESY', u'checksum': {u'adler32': u'e788f342', u'cksum': 2653715260, u'md5': u'e788f342'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_7.root', u'site': u'T2_CH_CERN', u'jobid': u'7', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_7.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_7.root', u'size': 34921, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'6431b348', u'cksum': 9393304, u'md5': u'6431b348'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_23.root', u'site': u'T2_CH_CERN', u'jobid': u'23', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_23.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_23.root', u'size': 34201, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'9a8ab3ac', u'cksum': 3150684062, u'md5': u'9a8ab3ac'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_13.root', u'site': u'T2_CH_CERN', u'jobid': u'13', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_13.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_13.root', u'size': 34238, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'ea1ed877', u'cksum': 4067439062, u'md5': u'ea1ed877'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_9.root', u'site': u'T2_CH_CERN', u'jobid': u'9', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_9.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_9.root', u'size': 35023, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'700a57c3', u'cksum': 722369812, u'md5': u'700a57c3'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_14.root', u'site': u'T2_CH_CERN', u'jobid': u'14', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_14.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_14.root', u'size': 34088, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'fde0eaad', u'cksum': 1616537153, u'md5': u'fde0eaad'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_12.root', u'site': u'T2_CH_CERN', u'jobid': u'12', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_12.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_12.root', u'size': 34548, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'112831db', u'cksum': 1121933573, u'md5': u'112831db'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_27.root', u'site': u'T2_CH_CERN', u'jobid': u'27', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_27.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_27.root', u'size': 34063, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'8d84088e', u'cksum': 3295009396, u'md5': u'8d84088e'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_20.root', u'site': u'T2_CH_CERN', u'jobid': u'20', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_20.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_20.root', u'size': 33458, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'395310f2', u'cksum': 1817663650, u'md5': u'395310f2'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_1.root', u'site': u'T2_CH_CERN', u'jobid': u'1', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_1.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_1.root', u'size': 34186, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'b952e506', u'cksum': 3377079515, u'md5': u'b952e506'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_25.root', u'site': u'T2_CH_CERN', u'jobid': u'25', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_25.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_25.root', u'size': 34328, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'23d55ba2', u'cksum': 1356635196, u'md5': u'23d55ba2'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_10.root', u'site': u'T2_CH_CERN', u'jobid': u'10', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_10.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_10.root', u'size': 34129, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'48a0c651', u'cksum': 3434204714, u'md5': u'48a0c651'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_24.root', u'site': u'T2_CH_CERN', u'jobid': u'24', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_24.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_24.root', u'size': 32668, u'directstageout': u'F'}, {u'tmpsite': u'T2_DE_DESY', u'checksum': {u'adler32': u'1fe48990', u'cksum': 1855565703, u'md5': u'1fe48990'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_26.root', u'site': u'T2_CH_CERN', u'jobid': u'26', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_26.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_26.root', u'size': 33983, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'a4ccd868', u'cksum': 573365817, u'md5': u'a4ccd868'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_8.root', u'site': u'T2_CH_CERN', u'jobid': u'8', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_8.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_8.root', u'size': 33761, u'directstageout': u'F'}, {u'tmpsite': u'T2_DE_DESY', u'checksum': {u'adler32': u'cbcc82ae', u'cksum': 2937252163, u'md5': u'cbcc82ae'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_5.root', u'site': u'T2_CH_CERN', u'jobid': u'5', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_5.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_5.root', u'size': 35275, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'12eaeeac', u'cksum': 2495205015, u'md5': u'12eaeeac'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_11.root', u'site': u'T2_CH_CERN', u'jobid': u'11', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_11.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_11.root', u'size': 34109, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'f71cc91f', u'cksum': 2549921482, u'md5': u'f71cc91f'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_2.root', u'site': u'T2_CH_CERN', u'jobid': u'2', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_2.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_2.root', u'size': 34170, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'ec9f2569', u'cksum': 2909336085, u'md5': u'ec9f2569'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_4.root', u'site': u'T2_CH_CERN', u'jobid': u'4', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_4.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_4.root', u'size': 34412, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'b38ae3f4', u'cksum': 2638852420, u'md5': u'b38ae3f4'}, u'lfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_28.root', u'site': u'T2_CH_CERN', u'jobid': u'28', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_28.root', u'tmplfn': u'/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_28.root', u'size': 30701, u'directstageout': u'F'}], '--dir', 'crab_projects/crab_TagAndProbeeraD/', '--proxy', '/tmp/x509up_u93494', '--parallel', None, '--wait', None, '--checksum', 'ADLER32', '--command', None]
+DEBUG 2018-01-29 12:42:15,445: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2018-01-29 12:42:15,445: 	 Instance is prod
+DEBUG 2018-01-29 12:42:15,445: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-01-29 12:42:15,445: 	 Command url /crabserver/prod/workflow
+INFO 2018-01-29 12:42:15,495: 	 Will use `gfal-copy` command for file transfers
+DEBUG 2018-01-29 12:42:15,871: 	 Starting ChildProcess with 10 ChildProcess
+INFO 2018-01-29 12:42:15,967: 	 Placing file 'TagAndProbe_eraD_18.root' in retrieval queue 
+INFO 2018-01-29 12:42:15,991: 	 Placing file 'TagAndProbe_eraD_21.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,018: 	 Placing file 'TagAndProbe_eraD_19.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,061: 	 Placing file 'TagAndProbe_eraD_6.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,091: 	 Placing file 'TagAndProbe_eraD_16.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,144: 	 Placing file 'TagAndProbe_eraD_17.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,175: 	 Placing file 'TagAndProbe_eraD_22.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,222: 	 Placing file 'TagAndProbe_eraD_15.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,323: 	 Placing file 'TagAndProbe_eraD_3.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,427: 	 Placing file 'TagAndProbe_eraD_7.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,627: 	 Placing file 'TagAndProbe_eraD_23.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,643: 	 Placing file 'TagAndProbe_eraD_13.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,696: 	 Placing file 'TagAndProbe_eraD_9.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,741: 	 Placing file 'TagAndProbe_eraD_14.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,781: 	 Placing file 'TagAndProbe_eraD_12.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,807: 	 Placing file 'TagAndProbe_eraD_27.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,921: 	 Placing file 'TagAndProbe_eraD_20.root' in retrieval queue 
+INFO 2018-01-29 12:42:16,939: 	 Placing file 'TagAndProbe_eraD_1.root' in retrieval queue 
+INFO 2018-01-29 12:42:17,030: 	 Placing file 'TagAndProbe_eraD_25.root' in retrieval queue 
+INFO 2018-01-29 12:42:17,101: 	 Placing file 'TagAndProbe_eraD_10.root' in retrieval queue 
+INFO 2018-01-29 12:42:17,127: 	 Placing file 'TagAndProbe_eraD_24.root' in retrieval queue 
+INFO 2018-01-29 12:42:17,164: 	 Placing file 'TagAndProbe_eraD_26.root' in retrieval queue 
+INFO 2018-01-29 12:42:17,419: 	 Placing file 'TagAndProbe_eraD_8.root' in retrieval queue 
+INFO 2018-01-29 12:42:17,782: 	 Placing file 'TagAndProbe_eraD_5.root' in retrieval queue 
+INFO 2018-01-29 12:42:17,808: 	 Placing file 'TagAndProbe_eraD_11.root' in retrieval queue 
+INFO 2018-01-29 12:42:17,867: 	 Placing file 'TagAndProbe_eraD_2.root' in retrieval queue 
+INFO 2018-01-29 12:42:17,921: 	 Placing file 'TagAndProbe_eraD_4.root' in retrieval queue 
+INFO 2018-01-29 12:42:18,021: 	 Placing file 'TagAndProbe_eraD_28.root' in retrieval queue 
+INFO 2018-01-29 12:42:18,022: 	 Please wait
+DEBUG 2018-01-29 12:42:18,022: 	 stopchildproc() method has been called
+DEBUG 2018-01-29 12:42:29,618: 	 The output of the transfer subprocesses follows:
+DEBUG 2018-01-29 12:42:29,618: 	 	INFO 2018-01-29 12:42:15,994: 	 Retrieving TagAndProbe_eraD_18.root 
+DEBUG 2018-01-29 12:42:29,619: 	 	DEBUG 2018-01-29 12:42:15,995: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_18.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_18.root
+DEBUG 2018-01-29 12:42:29,619: 	 	INFO 2018-01-29 12:42:15,999: 	 Retrieving TagAndProbe_eraD_21.root 
+DEBUG 2018-01-29 12:42:29,619: 	 	DEBUG 2018-01-29 12:42:16,000: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_21.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_21.root
+DEBUG 2018-01-29 12:42:29,619: 	 	INFO 2018-01-29 12:42:16,029: 	 Retrieving TagAndProbe_eraD_19.root 
+DEBUG 2018-01-29 12:42:29,619: 	 	DEBUG 2018-01-29 12:42:16,030: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_19.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_19.root
+DEBUG 2018-01-29 12:42:29,619: 	 	INFO 2018-01-29 12:42:16,066: 	 Retrieving TagAndProbe_eraD_6.root 
+DEBUG 2018-01-29 12:42:29,619: 	 	DEBUG 2018-01-29 12:42:16,067: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_6.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_6.root
+DEBUG 2018-01-29 12:42:29,619: 	 	INFO 2018-01-29 12:42:16,102: 	 Retrieving TagAndProbe_eraD_16.root 
+DEBUG 2018-01-29 12:42:29,619: 	 	DEBUG 2018-01-29 12:42:16,103: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_16.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_16.root
+DEBUG 2018-01-29 12:42:29,619: 	 	INFO 2018-01-29 12:42:16,150: 	 Retrieving TagAndProbe_eraD_17.root 
+DEBUG 2018-01-29 12:42:29,619: 	 	DEBUG 2018-01-29 12:42:16,151: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_17.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_17.root
+DEBUG 2018-01-29 12:42:29,619: 	 	INFO 2018-01-29 12:42:16,181: 	 Retrieving TagAndProbe_eraD_22.root 
+DEBUG 2018-01-29 12:42:29,619: 	 	DEBUG 2018-01-29 12:42:16,183: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_22.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_22.root
+DEBUG 2018-01-29 12:42:29,620: 	 	INFO 2018-01-29 12:42:16,242: 	 Retrieving TagAndProbe_eraD_15.root 
+DEBUG 2018-01-29 12:42:29,620: 	 	DEBUG 2018-01-29 12:42:16,249: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_15.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_15.root
+DEBUG 2018-01-29 12:42:29,620: 	 	INFO 2018-01-29 12:42:16,337: 	 Retrieving TagAndProbe_eraD_3.root 
+DEBUG 2018-01-29 12:42:29,620: 	 	DEBUG 2018-01-29 12:42:16,340: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_3.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_3.root
+DEBUG 2018-01-29 12:42:29,620: 	 	INFO 2018-01-29 12:42:16,431: 	 Retrieving TagAndProbe_eraD_7.root 
+DEBUG 2018-01-29 12:42:29,620: 	 	DEBUG 2018-01-29 12:42:16,432: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_7.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_7.root
+DEBUG 2018-01-29 12:42:29,620: 	 	DEBUG 2018-01-29 12:42:18,937: 	 Finish executing for file TagAndProbe_eraD_15.root
+DEBUG 2018-01-29 12:42:29,620: 	 	INFO 2018-01-29 12:42:18,937: 	 Success: Success in retrieving TagAndProbe_eraD_15.root 
+DEBUG 2018-01-29 12:42:29,620: 	 	INFO 2018-01-29 12:42:18,957: 	 Retrieving TagAndProbe_eraD_23.root 
+DEBUG 2018-01-29 12:42:29,620: 	 	DEBUG 2018-01-29 12:42:18,957: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_23.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_23.root
+DEBUG 2018-01-29 12:42:29,621: 	 	DEBUG 2018-01-29 12:42:19,283: 	 Finish executing for file TagAndProbe_eraD_22.root
+DEBUG 2018-01-29 12:42:29,621: 	 	INFO 2018-01-29 12:42:19,295: 	 Success: Success in retrieving TagAndProbe_eraD_22.root 
+DEBUG 2018-01-29 12:42:29,621: 	 	INFO 2018-01-29 12:42:19,335: 	 Retrieving TagAndProbe_eraD_13.root 
+DEBUG 2018-01-29 12:42:29,621: 	 	DEBUG 2018-01-29 12:42:19,336: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_13.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_13.root
+DEBUG 2018-01-29 12:42:29,621: 	 	DEBUG 2018-01-29 12:42:19,456: 	 Finish executing for file TagAndProbe_eraD_17.root
+DEBUG 2018-01-29 12:42:29,621: 	 	INFO 2018-01-29 12:42:19,457: 	 Success: Success in retrieving TagAndProbe_eraD_17.root 
+DEBUG 2018-01-29 12:42:29,621: 	 	INFO 2018-01-29 12:42:19,476: 	 Retrieving TagAndProbe_eraD_9.root 
+DEBUG 2018-01-29 12:42:29,621: 	 	DEBUG 2018-01-29 12:42:19,477: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_9.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_9.root
+DEBUG 2018-01-29 12:42:29,621: 	 	DEBUG 2018-01-29 12:42:20,056: 	 Finish executing for file TagAndProbe_eraD_3.root
+DEBUG 2018-01-29 12:42:29,621: 	 	INFO 2018-01-29 12:42:20,057: 	 Success: Success in retrieving TagAndProbe_eraD_3.root 
+DEBUG 2018-01-29 12:42:29,622: 	 	INFO 2018-01-29 12:42:20,063: 	 Retrieving TagAndProbe_eraD_14.root 
+DEBUG 2018-01-29 12:42:29,622: 	 	DEBUG 2018-01-29 12:42:20,063: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_14.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_14.root
+DEBUG 2018-01-29 12:42:29,622: 	 	DEBUG 2018-01-29 12:42:20,180: 	 Finish executing for file TagAndProbe_eraD_21.root
+DEBUG 2018-01-29 12:42:29,622: 	 	INFO 2018-01-29 12:42:20,181: 	 Success: Success in retrieving TagAndProbe_eraD_21.root 
+DEBUG 2018-01-29 12:42:29,622: 	 	INFO 2018-01-29 12:42:20,295: 	 Retrieving TagAndProbe_eraD_12.root 
+DEBUG 2018-01-29 12:42:29,622: 	 	DEBUG 2018-01-29 12:42:20,295: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_12.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_12.root
+DEBUG 2018-01-29 12:42:29,622: 	 	DEBUG 2018-01-29 12:42:20,438: 	 Finish executing for file TagAndProbe_eraD_18.root
+DEBUG 2018-01-29 12:42:29,622: 	 	INFO 2018-01-29 12:42:20,471: 	 Success: Success in retrieving TagAndProbe_eraD_18.root 
+DEBUG 2018-01-29 12:42:29,623: 	 	INFO 2018-01-29 12:42:20,558: 	 Retrieving TagAndProbe_eraD_27.root 
+DEBUG 2018-01-29 12:42:29,623: 	 	DEBUG 2018-01-29 12:42:20,558: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_27.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_27.root
+DEBUG 2018-01-29 12:42:29,623: 	 	DEBUG 2018-01-29 12:42:20,569: 	 Finish executing for file TagAndProbe_eraD_23.root
+DEBUG 2018-01-29 12:42:29,623: 	 	INFO 2018-01-29 12:42:20,569: 	 Success: Success in retrieving TagAndProbe_eraD_23.root 
+DEBUG 2018-01-29 12:42:29,623: 	 	INFO 2018-01-29 12:42:20,571: 	 Retrieving TagAndProbe_eraD_20.root 
+DEBUG 2018-01-29 12:42:29,623: 	 	DEBUG 2018-01-29 12:42:20,572: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_20.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_20.root
+DEBUG 2018-01-29 12:42:29,623: 	 	DEBUG 2018-01-29 12:42:20,622: 	 Finish executing for file TagAndProbe_eraD_19.root
+DEBUG 2018-01-29 12:42:29,624: 	 	INFO 2018-01-29 12:42:20,628: 	 Success: Success in retrieving TagAndProbe_eraD_19.root 
+DEBUG 2018-01-29 12:42:29,624: 	 	DEBUG 2018-01-29 12:42:20,729: 	 Finish executing for file TagAndProbe_eraD_7.root
+DEBUG 2018-01-29 12:42:29,624: 	 	INFO 2018-01-29 12:42:20,738: 	 Success: Success in retrieving TagAndProbe_eraD_7.root 
+DEBUG 2018-01-29 12:42:29,624: 	 	DEBUG 2018-01-29 12:42:20,747: 	 Finish executing for file TagAndProbe_eraD_6.root
+DEBUG 2018-01-29 12:42:29,624: 	 	INFO 2018-01-29 12:42:20,748: 	 Success: Success in retrieving TagAndProbe_eraD_6.root 
+DEBUG 2018-01-29 12:42:29,624: 	 	INFO 2018-01-29 12:42:20,762: 	 Retrieving TagAndProbe_eraD_1.root 
+DEBUG 2018-01-29 12:42:29,624: 	 	DEBUG 2018-01-29 12:42:20,780: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_1.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_1.root
+DEBUG 2018-01-29 12:42:29,624: 	 	INFO 2018-01-29 12:42:20,841: 	 Retrieving TagAndProbe_eraD_25.root 
+DEBUG 2018-01-29 12:42:29,624: 	 	DEBUG 2018-01-29 12:42:20,841: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_25.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_25.root
+DEBUG 2018-01-29 12:42:29,624: 	 	INFO 2018-01-29 12:42:20,904: 	 Retrieving TagAndProbe_eraD_10.root 
+DEBUG 2018-01-29 12:42:29,624: 	 	DEBUG 2018-01-29 12:42:20,905: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_10.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_10.root
+DEBUG 2018-01-29 12:42:29,624: 	 	DEBUG 2018-01-29 12:42:21,435: 	 Finish executing for file TagAndProbe_eraD_16.root
+DEBUG 2018-01-29 12:42:29,624: 	 	INFO 2018-01-29 12:42:21,441: 	 Success: Success in retrieving TagAndProbe_eraD_16.root 
+DEBUG 2018-01-29 12:42:29,624: 	 	INFO 2018-01-29 12:42:21,467: 	 Retrieving TagAndProbe_eraD_24.root 
+DEBUG 2018-01-29 12:42:29,624: 	 	DEBUG 2018-01-29 12:42:21,467: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_24.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_24.root
+DEBUG 2018-01-29 12:42:29,625: 	 	DEBUG 2018-01-29 12:42:22,988: 	 Finish executing for file TagAndProbe_eraD_14.root
+DEBUG 2018-01-29 12:42:29,625: 	 	INFO 2018-01-29 12:42:22,991: 	 Success: Success in retrieving TagAndProbe_eraD_14.root 
+DEBUG 2018-01-29 12:42:29,625: 	 	INFO 2018-01-29 12:42:23,005: 	 Retrieving TagAndProbe_eraD_26.root 
+DEBUG 2018-01-29 12:42:29,625: 	 	DEBUG 2018-01-29 12:42:23,006: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_26.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_26.root
+DEBUG 2018-01-29 12:42:29,625: 	 	DEBUG 2018-01-29 12:42:23,374: 	 Finish executing for file TagAndProbe_eraD_9.root
+DEBUG 2018-01-29 12:42:29,625: 	 	INFO 2018-01-29 12:42:23,374: 	 Success: Success in retrieving TagAndProbe_eraD_9.root 
+DEBUG 2018-01-29 12:42:29,625: 	 	INFO 2018-01-29 12:42:23,375: 	 Retrieving TagAndProbe_eraD_8.root 
+DEBUG 2018-01-29 12:42:29,625: 	 	DEBUG 2018-01-29 12:42:23,375: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_8.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_8.root
+DEBUG 2018-01-29 12:42:29,625: 	 	DEBUG 2018-01-29 12:42:23,860: 	 Finish executing for file TagAndProbe_eraD_12.root
+DEBUG 2018-01-29 12:42:29,625: 	 	INFO 2018-01-29 12:42:23,910: 	 Success: Success in retrieving TagAndProbe_eraD_12.root 
+DEBUG 2018-01-29 12:42:29,625: 	 	INFO 2018-01-29 12:42:23,911: 	 Retrieving TagAndProbe_eraD_5.root 
+DEBUG 2018-01-29 12:42:29,625: 	 	DEBUG 2018-01-29 12:42:23,912: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_5.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_5.root
+DEBUG 2018-01-29 12:42:29,625: 	 	DEBUG 2018-01-29 12:42:24,740: 	 Finish executing for file TagAndProbe_eraD_24.root
+DEBUG 2018-01-29 12:42:29,625: 	 	INFO 2018-01-29 12:42:24,741: 	 Success: Success in retrieving TagAndProbe_eraD_24.root 
+DEBUG 2018-01-29 12:42:29,626: 	 	INFO 2018-01-29 12:42:24,742: 	 Retrieving TagAndProbe_eraD_11.root 
+DEBUG 2018-01-29 12:42:29,626: 	 	DEBUG 2018-01-29 12:42:24,742: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_11.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_11.root
+DEBUG 2018-01-29 12:42:29,626: 	 	DEBUG 2018-01-29 12:42:25,745: 	 Finish executing for file TagAndProbe_eraD_13.root
+DEBUG 2018-01-29 12:42:29,626: 	 	INFO 2018-01-29 12:42:25,781: 	 Success: Success in retrieving TagAndProbe_eraD_13.root 
+DEBUG 2018-01-29 12:42:29,626: 	 	INFO 2018-01-29 12:42:25,796: 	 Retrieving TagAndProbe_eraD_2.root 
+DEBUG 2018-01-29 12:42:29,626: 	 	DEBUG 2018-01-29 12:42:25,811: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_2.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_2.root
+DEBUG 2018-01-29 12:42:29,626: 	 	DEBUG 2018-01-29 12:42:26,022: 	 Finish executing for file TagAndProbe_eraD_20.root
+DEBUG 2018-01-29 12:42:29,626: 	 	INFO 2018-01-29 12:42:26,035: 	 Success: Success in retrieving TagAndProbe_eraD_20.root 
+DEBUG 2018-01-29 12:42:29,626: 	 	INFO 2018-01-29 12:42:26,039: 	 Retrieving TagAndProbe_eraD_4.root 
+DEBUG 2018-01-29 12:42:29,626: 	 	DEBUG 2018-01-29 12:42:26,039: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_4.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_4.root
+DEBUG 2018-01-29 12:42:29,626: 	 	DEBUG 2018-01-29 12:42:26,296: 	 Finish executing for file TagAndProbe_eraD_8.root
+DEBUG 2018-01-29 12:42:29,627: 	 	INFO 2018-01-29 12:42:26,297: 	 Success: Success in retrieving TagAndProbe_eraD_8.root 
+DEBUG 2018-01-29 12:42:29,627: 	 	INFO 2018-01-29 12:42:26,306: 	 Retrieving TagAndProbe_eraD_28.root 
+DEBUG 2018-01-29 12:42:29,627: 	 	DEBUG 2018-01-29 12:42:26,306: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/SingleMuon/TagAndProbe_eraD/180128_180442/0000/TagAndProbe_eraD_28.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/results/TagAndProbe_eraD_28.root
+DEBUG 2018-01-29 12:42:29,627: 	 	DEBUG 2018-01-29 12:42:27,116: 	 Finish executing for file TagAndProbe_eraD_1.root
+DEBUG 2018-01-29 12:42:29,627: 	 	DEBUG 2018-01-29 12:42:27,118: 	 Finish executing for file TagAndProbe_eraD_27.root
+DEBUG 2018-01-29 12:42:29,628: 	 	INFO 2018-01-29 12:42:27,119: 	 Success: Success in retrieving TagAndProbe_eraD_27.root 
+DEBUG 2018-01-29 12:42:29,628: 	 	INFO 2018-01-29 12:42:27,124: 	 Success: Success in retrieving TagAndProbe_eraD_1.root 
+DEBUG 2018-01-29 12:42:29,628: 	 	DEBUG 2018-01-29 12:42:28,236: 	 Finish executing for file TagAndProbe_eraD_10.root
+DEBUG 2018-01-29 12:42:29,628: 	 	INFO 2018-01-29 12:42:28,236: 	 Success: Success in retrieving TagAndProbe_eraD_10.root 
+DEBUG 2018-01-29 12:42:29,628: 	 	DEBUG 2018-01-29 12:42:28,261: 	 Finish executing for file TagAndProbe_eraD_11.root
+DEBUG 2018-01-29 12:42:29,628: 	 	INFO 2018-01-29 12:42:28,261: 	 Success: Success in retrieving TagAndProbe_eraD_11.root 
+DEBUG 2018-01-29 12:42:29,629: 	 	DEBUG 2018-01-29 12:42:28,264: 	 Finish executing for file TagAndProbe_eraD_25.root
+DEBUG 2018-01-29 12:42:29,629: 	 	INFO 2018-01-29 12:42:28,265: 	 Success: Success in retrieving TagAndProbe_eraD_25.root 
+DEBUG 2018-01-29 12:42:29,629: 	 	DEBUG 2018-01-29 12:42:28,375: 	 Finish executing for file TagAndProbe_eraD_4.root
+DEBUG 2018-01-29 12:42:29,629: 	 	INFO 2018-01-29 12:42:28,376: 	 Success: Success in retrieving TagAndProbe_eraD_4.root 
+DEBUG 2018-01-29 12:42:29,629: 	 	DEBUG 2018-01-29 12:42:28,568: 	 Finish executing for file TagAndProbe_eraD_26.root
+DEBUG 2018-01-29 12:42:29,629: 	 	INFO 2018-01-29 12:42:28,569: 	 Success: Success in retrieving TagAndProbe_eraD_26.root 
+DEBUG 2018-01-29 12:42:29,630: 	 	DEBUG 2018-01-29 12:42:29,409: 	 Finish executing for file TagAndProbe_eraD_5.root
+DEBUG 2018-01-29 12:42:29,630: 	 	INFO 2018-01-29 12:42:29,410: 	 Success: Success in retrieving TagAndProbe_eraD_5.root 
+DEBUG 2018-01-29 12:42:29,630: 	 	DEBUG 2018-01-29 12:42:29,508: 	 Finish executing for file TagAndProbe_eraD_2.root
+DEBUG 2018-01-29 12:42:29,630: 	 	INFO 2018-01-29 12:42:29,509: 	 Success: Success in retrieving TagAndProbe_eraD_2.root 
+DEBUG 2018-01-29 12:42:29,630: 	 	DEBUG 2018-01-29 12:42:29,574: 	 Finish executing for file TagAndProbe_eraD_28.root
+DEBUG 2018-01-29 12:42:29,630: 	 	INFO 2018-01-29 12:42:29,580: 	 Success: Success in retrieving TagAndProbe_eraD_28.root 
+INFO 2018-01-29 12:42:29,730: 	 Success: All files successfully retrieved
+INFO 2018-01-29 12:42:29,792: 	 Log file is /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraD/crab.log

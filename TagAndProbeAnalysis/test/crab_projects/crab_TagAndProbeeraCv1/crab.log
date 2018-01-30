@@ -1,0 +1,481 @@
+DEBUG 2018-01-28 19:52:02,389: 	 Executing command: 'submit'
+DEBUG 2018-01-28 19:52:02,389: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2018-01-28 19:52:02,396: 	 Checking credentials
+DEBUG 2018-01-28 19:52:02,396: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-28 19:52:02,396: 	 Getting proxy life time left
+DEBUG 2018-01-28 19:52:02,900: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 78931
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:52:03,404: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 78930
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:52:03,404: 	 Proxy valid for 21:55:31 hours
+INFO 2018-01-28 19:52:03,405: 	 Will use CRAB configuration file crab_TagProbe_eraCv1.py
+DEBUG 2018-01-28 19:52:03,405: 	 Loading CRAB configuration file.
+DEBUG 2018-01-28 19:52:06,054: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2018-01-28 19:52:06,169: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:52:06,170: 	 Checking credentials
+DEBUG 2018-01-28 19:52:06,170: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-28 19:52:06,170: 	 Getting proxy life time left
+DEBUG 2018-01-28 19:52:06,674: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 78927
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:52:07,178: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 78926
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:52:07,178: 	 Proxy valid for 21:55:27 hours
+DEBUG 2018-01-28 19:52:07,684: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u93494 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:52:08,647: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-01-28 19:52:08,755: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:52:08,755: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-01-28 19:52:08,755: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2018-01-28 19:52:08,959: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 644:28:55  (26.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-28 19:52:08,960: 	 Myproxy is valid: 2320135
+DEBUG 2018-01-28 19:52:08,960: 	 Command use: submit
+DEBUG 2018-01-28 19:52:08,960: 	 Options use: ['-c', 'crab_TagProbe_eraCv1.py']
+DEBUG 2018-01-28 19:52:09,907: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2018-01-28 19:52:09,907: 	 Instance is prod
+DEBUG 2018-01-28 19:52:09,907: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-01-28 19:52:09,907: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-01-28 19:52:09,907: 	 Started submission
+DEBUG 2018-01-28 19:52:09,907: 	 Working on /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraCv1
+DEBUG 2018-01-28 19:52:10,851: 	 Loading required information from the environment
+DEBUG 2018-01-28 19:52:10,851: 	 Found CMSSW_9_4_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0
+DEBUG 2018-01-28 19:52:10,853: 	 Loading required information from the environment
+DEBUG 2018-01-28 19:52:10,853: 	 Found CMSSW_9_4_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0
+DEBUG 2018-01-28 19:52:10,867: 	 UNIQUE NAME: tarUUID 0e910fb6-4a04-4415-b39c-2435bd1bd410 
+DEBUG 2018-01-28 19:52:10,867: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = True
+config.General.transferOutputs = True
+config.General.workArea = 'crab_projects'
+config.General.requestName = 'TagAndProbeeraCv1'
+config.section_('JobType')
+config.JobType.psetName = 'TagProbe_eraCv1.py'
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.inputDataset = '/SingleMuon/Run2017C-PromptReco-v1/MINIAOD'
+config.Data.outputDatasetTag = 'TagAndProbe_eraCv1'
+config.Data.publication = True
+config.Data.unitsPerJob = 1000
+config.Data.splitting = 'LumiBased'
+config.Data.inputDBS = 'global'
+config.Data.lumiMask = 'eraC.txt'
+config.Data.outLFNDirBase = '/store/user/psiddire/'
+config.Data.runRange = '299368-302029'
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2018-01-28 19:52:10,868: 	 self.config.JobType.psetName: TagProbe_eraCv1.py
+INFO 2018-01-28 19:52:10,868: 	 Importing CMSSW configuration TagProbe_eraCv1.py
+INFO 2018-01-28 19:52:10,955: 	 Finished importing CMSSW configuration TagProbe_eraCv1.py
+DEBUG 2018-01-28 19:52:10,955: 	 Writing CMSSW configuration to /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraCv1/inputs/PSet.py
+DEBUG 2018-01-28 19:52:10,985: 	 The following EDM output files will be collected: []
+DEBUG 2018-01-28 19:52:10,985: 	 The following TFile output files will be collected: ['TagAndProbe_eraCv1.root']
+DEBUG 2018-01-28 19:52:10,985: 	 The following user output files will be collected: []
+DEBUG 2018-01-28 19:52:10,985: 	 Loading required information from the environment
+DEBUG 2018-01-28 19:52:10,985: 	 Found CMSSW_9_4_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0
+DEBUG 2018-01-28 19:52:10,985: 	 Making tarball in /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraCv1/inputs/0e910fb6-4a04-4415-b39c-2435bd1bd410default.tgz
+DEBUG 2018-01-28 19:52:10,990: 	 Checking directory /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/lib
+DEBUG 2018-01-28 19:52:10,990: 	 Adding directory /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/lib to tarball
+DEBUG 2018-01-28 19:52:11,051: 	 Checking directory /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/biglib
+DEBUG 2018-01-28 19:52:11,051: 	 Adding directory /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/biglib to tarball
+DEBUG 2018-01-28 19:52:11,052: 	 Checking directory /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/module
+DEBUG 2018-01-28 19:52:11,063: 	 Uploading archive /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraCv1/inputs/0e910fb6-4a04-4415-b39c-2435bd1bd410default.tgz (107 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2018-01-28 19:52:12,011: 	 Loading required information from the environment
+DEBUG 2018-01-28 19:52:12,011: 	 Found CMSSW_9_4_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0
+DEBUG 2018-01-28 19:52:12,011: 	 Making tarball in /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraCv1/inputs/debugFiles.tgz
+DEBUG 2018-01-28 19:52:12,014: 	 Uploading archive /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraCv1/inputs/debugFiles.tgz (1 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2018-01-28 19:52:12,956: 	 Result uploading input files: 9988b9babc3e79ef01bb54539bd2facaca4552a686495b71649ba506d0328bd5.tar.gz 
+DEBUG 2018-01-28 19:52:12,956: 	 Attaching lumi mask eraC.txt to the request
+DEBUG 2018-01-28 19:52:12,956: 	 Reading lumi-mask from eraC.txt
+WARNING 2018-01-28 19:52:12,965: 	 Warning: The following output files will not be published, as they are not EDM files: ['TagAndProbe_eraCv1.root']
+INFO 2018-01-28 19:52:12,966: 	 Sending the request to the server
+DEBUG 2018-01-28 19:52:12,966: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 1, 'useparent': 0, 'asyncdest': 'T2_CH_CERN', 'algoargs': 1000, 'cachefilename': '9988b9babc3e79ef01bb54539bd2facaca4552a686495b71649ba506d0328bd5.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_9_4_0', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/SingleMuon/Run2017C-PromptReco-v1/MINIAOD', 'lfn': '/store/user/psiddire/', 'dryrun': 0, 'workflow': 'crab_TagAndProbeeraCv1', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'runs': [u'299368', u'299369', u'299370', u'299380', u'299381', u'299394', u'299395', u'299396', u'299420', u'299443', u'299450', u'299477', u'299478', u'299479', u'299480', u'299481', u'299593', u'299594', u'299595', u'299597', u'299649', u'300087', u'300105', u'300106', u'300107', u'300117', u'300122', u'300123', u'300155', u'300156', u'300157', u'300226', u'300233', u'300234', u'300235', u'300236', u'300237', u'300238', u'300239', u'300240', u'300280', u'300281', u'300282', u'300283', u'300284', u'300364', u'300365', u'300366', u'300367', u'300368', u'300369', u'300370', u'300371', u'300372', u'300373', u'300374', u'300375', u'300389', u'300390', u'300391', u'300392', u'300393', u'300394', u'300395', u'300396', u'300397', u'300398', u'300399', u'300400', u'300401', u'300459', u'300461', u'300462', u'300463', u'300464', u'300466', u'300467', u'300497', u'300514', u'300515', u'300516', u'300517', u'300558', u'300560', u'300574', u'300575', u'300576', u'300631', u'300632', u'300633', u'300635', u'300636', u'300673', u'300674', u'300675', u'300676', u'300742', u'300777', u'300780', u'300785', u'300806', u'300811', u'300812', u'300816', u'300817', u'301046', u'301141', u'301142', u'301161', u'301165', u'301179', u'301180', u'301183', u'301281', u'301283', u'301298', u'301323', u'301330', u'301359', u'301384', u'301391', u'301392', u'301393', u'301396', u'301397', u'301398', u'301399', u'301417', u'301447', u'301448', u'301449', u'301450', u'301461', u'301472', u'301475', u'301476', u'301519', u'301524', u'301529', u'301530', u'301531', u'301532', u'301567', u'301627', u'301664', u'301665', u'301694', u'301912', u'301913', u'301914', u'301941', u'301959', u'301960', u'301970', u'301984', u'301985', u'301986', u'301987', u'301997', u'301998', u'302019', u'302026', u'302029'], 'lumis': ['37,175', '1,303', '1,7,47,705', '34,227', '1,45', '5,33', '1,187', '1,81', '2,50', '145,164', '39,88', '39,42,82,87', '1,175', '1,123', '1,715', '1,196,199,236,260,479,487,940,943,1037,1061,1257', '95,177,179,896', '1,317', '1,134,138,138', '3,91,93,540', '151,332', '36,59,61,126,128,216,218,239', '1,21', '1,74', '1,28,30,47', '35,67', '46,730,735,924,927,1295', '1,384,387,612', '35,1229', '1,72', '9,1107', '43,448', '43,162', '1,59', '1,187', '11,187', '1,713,716,717', '30,58,62,329', '1,145,148,167,171,213', '1,7,11,46,51,362', '52,56,61,69,73,150,155,165,178,198,207,222,226,251,255,268,275,345,349,370,381,548,553,607,617,639,663,691', '3,8', '1,9,13,59,73,92,97,114,142,151,156,186', '1,34', '1,22,38,47,50,82,90,98,108,130,133,152,156,250,260,414,420,561,568,585,590,680,691,751', '27,46', '1,20', '1,21', '1,20', '1,20', '1,20', '1,20', '1,20', '1,8', '1,21', '1,21', '1,93', '1,1,4,5,8,8,11,20,23,39,60,149', '2,21', '1,21', '1,21', '1,20', '1,21', '1,20', '1,20', '1,20', '1,20', '1,20', '1,677', '19,673', '40,332', '1,98', '1,97', '1,124', '1,103,126,265', '1,650', '1,563', '26,175', '38,150', '1,838,957,1013', '1,111', '1,8,103,623', '8,548', '1,640,645,844', '15,111', '1,82', '7,123,125,1206', '41,49,63,66,75,226', '1,21', '1,447', '1,23,26,176', '1,335,338,1572', '41,47,49,49,52,56,59,66', '1,33', '1,33', '1,26', '56,343', '21,509', '3,341', '1,549,552,750,752,1201,1219,1272', '36,214', '6,508', '1,59', '6,161', '1,33,36,74,80,383,410,493', '162,223', '25,31', '1,897', '36,805', '1,145', '35,59', '1,97', '3,10,13,303', '38,157', '3,886', '45,949', '35,474,477,990', '22,353', '33,319', '1,476', '38,214', '1,627', '2,18', '1,33', '1,228,231,728', '1,9', '1,108', '50,367', '86,96,99,400,404,512', '1,329', '1,404', '1,173', '28,581', '35,830', '1,18', '1,844', '42,250', '1,110,117,263', '1,49', '1,110', '1,394', '1,611', '14,372', '57,943', '28,445', '1,294,319,487', '36,102', '43,52,101,422', '1,58', '1,350', '31,568', '30,1938', '1,147', '6,123', '17,317', '1,367', '1,381', '1,1128', '37,407', '1,1704', '34,86', '24,53,66,72', '1,98'], 'nonprodsw': 0, 'tfileoutfiles': ['TagAndProbe_eraCv1.root'], 'oneEventMode': 0, 'debugfilename': '82936aa7e4ddfe73b05319c7f810c069610b61b47b27a0774ddc75878d61995a.tar.gz', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc630', 'totalunits': 0, 'splitalgo': 'LumiBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'TagAndProbe_eraCv1'} 
+DEBUG 2018-01-28 19:52:12,968: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=1&useparent=0&asyncdest=T2_CH_CERN&algoargs=1000&cachefilename=9988b9babc3e79ef01bb54539bd2facaca4552a686495b71649ba506d0328bd5.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_9_4_0&primarydataset=&inputdata=%2FSingleMuon%2FRun2017C-PromptReco-v1%2FMINIAOD&lfn=%2Fstore%2Fuser%2Fpsiddire%2F&dryrun=0&workflow=crab_TagAndProbeeraCv1&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=82936aa7e4ddfe73b05319c7f810c069610b61b47b27a0774ddc75878d61995a.tar.gz&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc630&totalunits=0&splitalgo=LumiBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=TagAndProbe_eraCv1&tfileoutfiles=TagAndProbe_eraCv1.root&runs=299368&runs=299369&runs=299370&runs=299380&runs=299381&runs=299394&runs=299395&runs=299396&runs=299420&runs=299443&runs=299450&runs=299477&runs=299478&runs=299479&runs=299480&runs=299481&runs=299593&runs=299594&runs=299595&runs=299597&runs=299649&runs=300087&runs=300105&runs=300106&runs=300107&runs=300117&runs=300122&runs=300123&runs=300155&runs=300156&runs=300157&runs=300226&runs=300233&runs=300234&runs=300235&runs=300236&runs=300237&runs=300238&runs=300239&runs=300240&runs=300280&runs=300281&runs=300282&runs=300283&runs=300284&runs=300364&runs=300365&runs=300366&runs=300367&runs=300368&runs=300369&runs=300370&runs=300371&runs=300372&runs=300373&runs=300374&runs=300375&runs=300389&runs=300390&runs=300391&runs=300392&runs=300393&runs=300394&runs=300395&runs=300396&runs=300397&runs=300398&runs=300399&runs=300400&runs=300401&runs=300459&runs=300461&runs=300462&runs=300463&runs=300464&runs=300466&runs=300467&runs=300497&runs=300514&runs=300515&runs=300516&runs=300517&runs=300558&runs=300560&runs=300574&runs=300575&runs=300576&runs=300631&runs=300632&runs=300633&runs=300635&runs=300636&runs=300673&runs=300674&runs=300675&runs=300676&runs=300742&runs=300777&runs=300780&runs=300785&runs=300806&runs=300811&runs=300812&runs=300816&runs=300817&runs=301046&runs=301141&runs=301142&runs=301161&runs=301165&runs=301179&runs=301180&runs=301183&runs=301281&runs=301283&runs=301298&runs=301323&runs=301330&runs=301359&runs=301384&runs=301391&runs=301392&runs=301393&runs=301396&runs=301397&runs=301398&runs=301399&runs=301417&runs=301447&runs=301448&runs=301449&runs=301450&runs=301461&runs=301472&runs=301475&runs=301476&runs=301519&runs=301524&runs=301529&runs=301530&runs=301531&runs=301532&runs=301567&runs=301627&runs=301664&runs=301665&runs=301694&runs=301912&runs=301913&runs=301914&runs=301941&runs=301959&runs=301960&runs=301970&runs=301984&runs=301985&runs=301986&runs=301987&runs=301997&runs=301998&runs=302019&runs=302026&runs=302029&lumis=37%2C175&lumis=1%2C303&lumis=1%2C7%2C47%2C705&lumis=34%2C227&lumis=1%2C45&lumis=5%2C33&lumis=1%2C187&lumis=1%2C81&lumis=2%2C50&lumis=145%2C164&lumis=39%2C88&lumis=39%2C42%2C82%2C87&lumis=1%2C175&lumis=1%2C123&lumis=1%2C715&lumis=1%2C196%2C199%2C236%2C260%2C479%2C487%2C940%2C943%2C1037%2C1061%2C1257&lumis=95%2C177%2C179%2C896&lumis=1%2C317&lumis=1%2C134%2C138%2C138&lumis=3%2C91%2C93%2C540&lumis=151%2C332&lumis=36%2C59%2C61%2C126%2C128%2C216%2C218%2C239&lumis=1%2C21&lumis=1%2C74&lumis=1%2C28%2C30%2C47&lumis=35%2C67&lumis=46%2C730%2C735%2C924%2C927%2C1295&lumis=1%2C384%2C387%2C612&lumis=35%2C1229&lumis=1%2C72&lumis=9%2C1107&lumis=43%2C448&lumis=43%2C162&lumis=1%2C59&lumis=1%2C187&lumis=11%2C187&lumis=1%2C713%2C716%2C717&lumis=30%2C58%2C62%2C329&lumis=1%2C145%2C148%2C167%2C171%2C213&lumis=1%2C7%2C11%2C46%2C51%2C362&lumis=52%2C56%2C61%2C69%2C73%2C150%2C155%2C165%2C178%2C198%2C207%2C222%2C226%2C251%2C255%2C268%2C275%2C345%2C349%2C370%2C381%2C548%2C553%2C607%2C617%2C639%2C663%2C691&lumis=3%2C8&lumis=1%2C9%2C13%2C59%2C73%2C92%2C97%2C114%2C142%2C151%2C156%2C186&lumis=1%2C34&lumis=1%2C22%2C38%2C47%2C50%2C82%2C90%2C98%2C108%2C130%2C133%2C152%2C156%2C250%2C260%2C414%2C420%2C561%2C568%2C585%2C590%2C680%2C691%2C751&lumis=27%2C46&lumis=1%2C20&lumis=1%2C21&lumis=1%2C20&lumis=1%2C20&lumis=1%2C20&lumis=1%2C20&lumis=1%2C20&lumis=1%2C8&lumis=1%2C21&lumis=1%2C21&lumis=1%2C93&lumis=1%2C1%2C4%2C5%2C8%2C8%2C11%2C20%2C23%2C39%2C60%2C149&lumis=2%2C21&lumis=1%2C21&lumis=1%2C21&lumis=1%2C20&lumis=1%2C21&lumis=1%2C20&lumis=1%2C20&lumis=1%2C20&lumis=1%2C20&lumis=1%2C20&lumis=1%2C677&lumis=19%2C673&lumis=40%2C332&lumis=1%2C98&lumis=1%2C97&lumis=1%2C124&lumis=1%2C103%2C126%2C265&lumis=1%2C650&lumis=1%2C563&lumis=26%2C175&lumis=38%2C150&lumis=1%2C838%2C957%2C1013&lumis=1%2C111&lumis=1%2C8%2C103%2C623&lumis=8%2C548&lumis=1%2C640%2C645%2C844&lumis=15%2C111&lumis=1%2C82&lumis=7%2C123%2C125%2C1206&lumis=41%2C49%2C63%2C66%2C75%2C226&lumis=1%2C21&lumis=1%2C447&lumis=1%2C23%2C26%2C176&lumis=1%2C335%2C338%2C1572&lumis=41%2C47%2C49%2C49%2C52%2C56%2C59%2C66&lumis=1%2C33&lumis=1%2C33&lumis=1%2C26&lumis=56%2C343&lumis=21%2C509&lumis=3%2C341&lumis=1%2C549%2C552%2C750%2C752%2C1201%2C1219%2C1272&lumis=36%2C214&lumis=6%2C508&lumis=1%2C59&lumis=6%2C161&lumis=1%2C33%2C36%2C74%2C80%2C383%2C410%2C493&lumis=162%2C223&lumis=25%2C31&lumis=1%2C897&lumis=36%2C805&lumis=1%2C145&lumis=35%2C59&lumis=1%2C97&lumis=3%2C10%2C13%2C303&lumis=38%2C157&lumis=3%2C886&lumis=45%2C949&lumis=35%2C474%2C477%2C990&lumis=22%2C353&lumis=33%2C319&lumis=1%2C476&lumis=38%2C214&lumis=1%2C627&lumis=2%2C18&lumis=1%2C33&lumis=1%2C228%2C231%2C728&lumis=1%2C9&lumis=1%2C108&lumis=50%2C367&lumis=86%2C96%2C99%2C400%2C404%2C512&lumis=1%2C329&lumis=1%2C404&lumis=1%2C173&lumis=28%2C581&lumis=35%2C830&lumis=1%2C18&lumis=1%2C844&lumis=42%2C250&lumis=1%2C110%2C117%2C263&lumis=1%2C49&lumis=1%2C110&lumis=1%2C394&lumis=1%2C611&lumis=14%2C372&lumis=57%2C943&lumis=28%2C445&lumis=1%2C294%2C319%2C487&lumis=36%2C102&lumis=43%2C52%2C101%2C422&lumis=1%2C58&lumis=1%2C350&lumis=31%2C568&lumis=30%2C1938&lumis=1%2C147&lumis=6%2C123&lumis=17%2C317&lumis=1%2C367&lumis=1%2C381&lumis=1%2C1128&lumis=37%2C407&lumis=1%2C1704&lumis=34%2C86&lumis=24%2C53%2C66%2C72&lumis=1%2C98
+DEBUG 2018-01-28 19:52:14,198: 	 Result: {u'result': [{u'RequestName': u'180128_185213:psiddire_crab_TagAndProbeeraCv1'}]}
+INFO 2018-01-28 19:52:14,201: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2018-01-28 19:52:14,201: 	 Task name: 180128_185213:psiddire_crab_TagAndProbeeraCv1
+INFO 2018-01-28 19:52:14,201: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2018-01-28 19:52:14,201: 	 About to return
+INFO 2018-01-28 19:52:14,204: 	 Log file is /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraCv1/crab.log
+DEBUG 2018-01-29 12:45:00,406: 	 Executing command: 'status'
+DEBUG 2018-01-29 12:45:00,407: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2018-01-29 12:45:00,441: 	 Checking credentials
+DEBUG 2018-01-29 12:45:00,441: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-29 12:45:00,442: 	 Getting proxy life time left
+DEBUG 2018-01-29 12:45:03,914: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 86096
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:45:08,455: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 86090
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:45:08,456: 	 Proxy valid for 23:54:56 hours
+DEBUG 2018-01-29 12:45:08,979: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:45:08,979: 	 Checking credentials
+DEBUG 2018-01-29 12:45:08,980: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-29 12:45:08,980: 	 Getting proxy life time left
+DEBUG 2018-01-29 12:45:12,611: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 86087
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:45:15,719: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 86083
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:45:15,719: 	 Proxy valid for 23:54:47 hours
+DEBUG 2018-01-29 12:45:17,599: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-01-29 12:45:17,855: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:45:17,855: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-01-29 12:45:17,855: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2018-01-29 12:45:18,165: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 627:35:45  (26.1 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:45:18,168: 	 Myproxy is valid: 2259345
+DEBUG 2018-01-29 12:45:18,168: 	 Command use: status
+DEBUG 2018-01-29 12:45:18,168: 	 Options use: ['-d', 'crab_projects/crab_TagAndProbeeraCv1/']
+DEBUG 2018-01-29 12:45:19,681: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2018-01-29 12:45:19,681: 	 Instance is prod
+DEBUG 2018-01-29 12:45:19,682: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-01-29 12:45:19,682: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-01-29 12:45:21,165: 	 Got information from server oracle database: {u'result': [u'180128_185213:psiddire_crab_TagAndProbeeraCv1', u'None', u'SUBMITTED', u'2018-01-28 18:52:14.192508', u'None', u'2018-01-28 18:57:11.439208', u'None', u'CMSSW_9_4_0', u'slc6_amd64_gcc630', u'/SingleMuon/Run2017C-PromptReco-v1/MINIAOD', u'[]', u'[]', u'LumiBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'lumis': ['37,175', '1,303', '1,7,47,705', '34,227', '1,45', '5,33', '1,187', '1,81', '2,50', '145,164', '39,88', '39,42,82,87', '1,175', '1,123', '1,715', '1,196,199,236,260,479,487,940,943,1037,1061,1257', '95,177,179,896', '1,317', '1,134,138,138', '3,91,93,540', '151,332', '36,59,61,126,128,216,218,239', '1,21', '1,74', '1,28,30,47', '35,67', '46,730,735,924,927,1295', '1,384,387,612', '35,1229', '1,72', '9,1107', '43,448', '43,162', '1,59', '1,187', '11,187', '1,713,716,717', '30,58,62,329', '1,145,148,167,171,213', '1,7,11,46,51,362', '52,56,61,69,73,150,155,165,178,198,207,222,226,251,255,268,275,345,349,370,381,548,553,607,617,639,663,691', '3,8', '1,9,13,59,73,92,97,114,142,151,156,186', '1,34', '1,22,38,47,50,82,90,98,108,130,133,152,156,250,260,414,420,561,568,585,590,680,691,751', '27,46', '1,20', '1,21', '1,20', '1,20', '1,20', '1,20', '1,20', '1,8', '1,21', '1,21', '1,93', '1,1,4,5,8,8,11,20,23,39,60,149', '2,21', '1,21', '1,21', '1,20', '1,21', '1,20', '1,20', '1,20', '1,20', '1,20', '1,677', '19,673', '40,332', '1,98', '1,97', '1,124', '1,103,126,265', '1,650', '1,563', '26,175', '38,150', '1,838,957,1013', '1,111', '1,8,103,623', '8,548', '1,640,645,844', '15,111', '1,82', '7,123,125,1206', '41,49,63,66,75,226', '1,21', '1,447', '1,23,26,176', '1,335,338,1572', '41,47,49,49,52,56,59,66', '1,33', '1,33', '1,26', '56,343', '21,509', '3,341', '1,549,552,750,752,1201,1219,1272', '36,214', '6,508', '1,59', '6,161', '1,33,36,74,80,383,410,493', '162,223', '25,31', '1,897', '36,805', '1,145', '35,59', '1,97', '3,10,13,303', '38,157', '3,886', '45,949', '35,474,477,990', '22,353', '33,319', '1,476', '38,214', '1,627', '2,18', '1,33', '1,228,231,728', '1,9', '1,108', '50,367', '86,96,99,400,404,512', '1,329', '1,404', '1,173', '28,581', '35,830', '1,18', '1,844', '42,250', '1,110,117,263', '1,49', '1,110', '1,394', '1,611', '14,372', '57,943', '28,445', '1,294,319,487', '36,102', '43,52,101,422', '1,58', '1,350', '31,568', '30,1938', '1,147', '6,123', '17,317', '1,367', '1,381', '1,1128', '37,407', '1,1704', '34,86', '24,53,66,72', '1,98'], 'runs': ['299368', '299369', '299370', '299380', '299381', '299394', '299395', '299396', '299420', '299443', '299450', '299477', '299478', '299479', '299480', '299481', '299593', '299594', '299595', '299597', '299649', '300087', '300105', '300106', '300107', '300117', '300122', '300123', '300155', '300156', '300157', '300226', '300233', '300234', '300235', '300236', '300237', '300238', '300239', '300240', '300280', '300281', '300282', '300283', '300284', '300364', '300365', '300366', '300367', '300368', '300369', '300370', '300371', '300372', '300373', '300374', '300375', '300389', '300390', '300391', '300392', '300393', '300394', '300395', '300396', '300397', '300398', '300399', '300400', '300401', '300459', '300461', '300462', '300463', '300464', '300466', '300467', '300497', '300514', '300515', '300516', '300517', '300558', '300560', '300574', '300575', '300576', '300631', '300632', '300633', '300635', '300636', '300673', '300674', '300675', '300676', '300742', '300777', '300780', '300785', '300806', '300811', '300812', '300816', '300817', '301046', '301141', '301142', '301161', '301165', '301179', '301180', '301183', '301281', '301283', '301298', '301323', '301330', '301359', '301384', '301391', '301392', '301393', '301396', '301397', '301398', '301399', '301417', '301447', '301448', '301449', '301450', '301461', '301472', '301475', '301476', '301519', '301524', '301529', '301530', '301531', '301532', '301567', '301627', '301664', '301665', '301694', '301912', '301913', '301914', '301941', '301959', '301960', '301970', '301984', '301985', '301986', '301987', '301997', '301998', '302019', '302026', '302029'], 'lumis_per_job': 1000}", u'0', u'9988b9babc3e79ef01bb54539bd2facaca4552a686495b71649ba506d0328bd5.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'psiddire', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy', u'cms', u'None', u'None', u'TagAndProbe_eraCv1-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0122.cern.ch/mon/cms1092/180128_185213:psiddire_crab_TagAndProbeeraCv1', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['TagAndProbe_eraCv1.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0122.cern.ch', u'F', u'[]', u'T', u'/store/user/psiddire/', u'F', u'None', u'F', u'F', u'F', u'None', u'SingleMuon', u'filetransfers', u'SUBMIT', u'24088886', u'82936aa7e4ddfe73b05319c7f810c069610b61b47b27a0774ddc75878d61995a.tar.gz', u'137.138.121.249', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2018-01-29 12:45:21,166: 	 CRAB project directory:		/afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraCv1
+INFO 2018-01-29 12:45:21,166: 	 Task name:			180128_185213:psiddire_crab_TagAndProbeeraCv1
+INFO 2018-01-29 12:45:21,166: 	 Grid scheduler:			crab3@vocms0122.cern.ch
+INFO 2018-01-29 12:45:21,166: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-01-29 12:45:21,166: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/180128_185213%3Apsiddire_crab_TagAndProbeeraCv1
+INFO 2018-01-29 12:45:21,167: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=psiddire&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=180128_185213%3Apsiddire_crab_TagAndProbeeraCv1
+DEBUG 2018-01-29 12:45:21,167: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 24088886)
+DEBUG 2018-01-29 12:45:21,167: 	 Webdir is located at http://vocms0122.cern.ch/mon/cms1092/180128_185213:psiddire_crab_TagAndProbeeraCv1
+DEBUG 2018-01-29 12:45:22,769: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0122/cms1092/180128_185213:psiddire_crab_TagAndProbeeraCv1
+DEBUG 2018-01-29 12:45:22,770: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0122/cms1092/180128_185213:psiddire_crab_TagAndProbeeraCv1/status_cache
+DEBUG 2018-01-29 12:45:24,124: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [12968.0], 'StartTimes': [1517167111.0], 'SubmitTimes': [1517165845.0], 'JobIds': ['24088888.0'], 'EndTimes': [1517180079.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [549612], 'TotalUserCpuTimeHistory': [7510], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [407]}, '3': {'Retries': 0, 'WallDurations': [5659.0], 'StartTimes': [1517167124.0], 'SubmitTimes': [1517165845.0], 'JobIds': ['24088890.0'], 'EndTimes': [1517172783.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [633972], 'TotalUserCpuTimeHistory': [4535], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [244]}, '2': {'Retries': 2, 'WallDurations': [7023.0, 2581.0, 1297.0], 'StartTimes': [1517167111.0, 1517176530.0, 1517180083.0], 'SubmitTimes': [1517165845.0, 1517174204.0, 1517179240.0], 'JobIds': ['24088889.0', '24089591.0', '24090318.0'], 'EndTimes': [1517174134.0, 1517179111.0, 1517181380.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'failed', 'ResidentSetSize': [559404, 589884, 287368], 'Error': [8028, "CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root', flags=0x10, permissions=0660) => error '[ERROR] Operation expired' (errno=0, code=206)\n      [d] Last URL tried: root://g22n03.hep.wisc.edu:31094//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root?tried=\n      [e] Problematic data server: g22n03.hep.wisc.edu:31094\n      [f] Disabled source: s17n08.hep.wisc.edu:31094\n      [g] Disabled source: s17n06.hep.wisc.edu:31094\n      [h] Disabled source: g22n07.hep.wisc.edu:31094\n      [i] Disabled source: s17n01.hep.wisc.edu:31094\n", {'type': 'Fatal Exception', 'details': "An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root', flags=0x10, permissions=0660) => error '[ERROR] Operation expired' (errno=0, code=206)\n      [d] Last URL tried: root://g22n03.hep.wisc.edu:31094//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root?tried=\n      [e] Problematic data server: g22n03.hep.wisc.edu:31094\n      [f] Disabled source: s17n08.hep.wisc.edu:31094\n      [g] Disabled source: s17n06.hep.wisc.edu:31094\n      [h] Disabled source: g22n07.hep.wisc.edu:31094\n      [i] Disabled source: s17n01.hep.wisc.edu:31094", 'exitCode': '8028'}], 'TotalUserCpuTimeHistory': [6098, 414, 4], 'SiteHistory': ['Unknown', 'Unknown', 'Unknown'], 'TotalSysCpuTimeHistory': [338, 27, 0]}, '5': {'Retries': 1, 'WallDurations': [7415.0, 7858.0], 'StartTimes': [1517167112.0, 1517175295.0], 'SubmitTimes': [1517165845.0, 1517174595.0], 'JobIds': ['24088892.0', '24089651.0'], 'EndTimes': [1517174527.0, 1517183153.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [570536, 610276], 'TotalUserCpuTimeHistory': [6579, 6185], 'SiteHistory': ['Unknown', 'Unknown'], 'TotalSysCpuTimeHistory': [299, 286]}, '4': {'Retries': 0, 'WallDurations': [5017.0], 'StartTimes': [1517167124.0], 'SubmitTimes': [1517165845.0], 'JobIds': ['24088891.0'], 'EndTimes': [1517172141.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [648740], 'TotalUserCpuTimeHistory': [4209], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [216]}, '7': {'Retries': 0, 'WallDurations': [3552.0], 'StartTimes': [1517167111.0], 'SubmitTimes': [1517165845.0], 'JobIds': ['24088894.0'], 'EndTimes': [1517170663.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [601172], 'TotalUserCpuTimeHistory': [2155], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [118]}, '6': {'Retries': 0, 'WallDurations': [5964.0], 'StartTimes': [1517167113.0], 'SubmitTimes': [1517165845.0], 'JobIds': ['24088893.0'], 'EndTimes': [1517173077.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [609320], 'TotalUserCpuTimeHistory': [3888], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [377]}}
+INFO 2018-01-29 12:45:24,124: 	 Status on the scheduler:	FAILED
+INFO 2018-01-29 12:45:24,125: 	 
+Jobs status:                    failed         14.3% (1/7)
+INFO 2018-01-29 12:45:24,125: 	 				finished       85.7% (6/7)
+INFO 2018-01-29 12:45:25,622: 	 
+No publication information available yet
+INFO 2018-01-29 12:45:25,622: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+1 jobs failed with exit code 8028
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2018-01-29 12:45:25,820: 	 Log file is /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraCv1/crab.log
+DEBUG 2018-01-29 12:55:20,928: 	 Executing command: 'resubmit'
+DEBUG 2018-01-29 12:55:20,929: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2018-01-29 12:55:20,975: 	 Checking credentials
+DEBUG 2018-01-29 12:55:20,976: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-29 12:55:20,976: 	 Getting proxy life time left
+DEBUG 2018-01-29 12:55:22,701: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 85477
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:55:24,339: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 85474
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:55:24,340: 	 Proxy valid for 23:44:37 hours
+DEBUG 2018-01-29 12:55:24,485: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:55:24,486: 	 Checking credentials
+DEBUG 2018-01-29 12:55:24,486: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-29 12:55:24,486: 	 Getting proxy life time left
+DEBUG 2018-01-29 12:55:26,332: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 85473
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:55:27,751: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 85471
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:55:27,751: 	 Proxy valid for 23:44:33 hours
+DEBUG 2018-01-29 12:55:29,194: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-01-29 12:55:29,317: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:55:29,317: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-01-29 12:55:29,317: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2018-01-29 12:55:29,727: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 627:25:34  (26.1 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:55:29,730: 	 Myproxy is valid: 2258734
+DEBUG 2018-01-29 12:55:29,730: 	 Command use: resubmit
+DEBUG 2018-01-29 12:55:29,730: 	 Options use: ['-d', 'crab_projects/crab_TagAndProbeeraCv1/']
+DEBUG 2018-01-29 12:55:31,218: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2018-01-29 12:55:31,218: 	 Instance is prod
+DEBUG 2018-01-29 12:55:31,218: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-01-29 12:55:31,219: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-01-29 12:55:31,219: 	 Executing command: 'status'
+DEBUG 2018-01-29 12:55:31,219: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2018-01-29 12:55:31,246: 	 Checking credentials
+DEBUG 2018-01-29 12:55:31,247: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-29 12:55:31,247: 	 Getting proxy life time left
+DEBUG 2018-01-29 12:55:33,636: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 85466
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:55:36,161: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 85462
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:55:36,182: 	 Proxy valid for 23:44:26 hours
+DEBUG 2018-01-29 12:55:36,554: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:55:36,555: 	 Checking credentials
+DEBUG 2018-01-29 12:55:36,556: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-29 12:55:36,556: 	 Getting proxy life time left
+DEBUG 2018-01-29 12:55:38,226: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 85461
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:55:40,177: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 85458
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:55:40,177: 	 Proxy valid for 23:44:21 hours
+DEBUG 2018-01-29 12:55:41,513: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-01-29 12:55:41,743: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:55:41,743: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-01-29 12:55:41,743: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2018-01-29 12:55:41,952: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 627:25:22  (26.1 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 12:55:41,952: 	 Myproxy is valid: 2258722
+DEBUG 2018-01-29 12:55:41,953: 	 Command use: status
+DEBUG 2018-01-29 12:55:41,953: 	 Options use: []
+DEBUG 2018-01-29 12:55:43,347: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2018-01-29 12:55:43,347: 	 Instance is prod
+DEBUG 2018-01-29 12:55:43,348: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-01-29 12:55:43,348: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-01-29 12:55:44,757: 	 Got information from server oracle database: {u'result': [u'180128_185213:psiddire_crab_TagAndProbeeraCv1', u'None', u'SUBMITTED', u'2018-01-28 18:52:14.192508', u'None', u'2018-01-28 18:57:11.439208', u'None', u'CMSSW_9_4_0', u'slc6_amd64_gcc630', u'/SingleMuon/Run2017C-PromptReco-v1/MINIAOD', u'[]', u'[]', u'LumiBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'lumis': ['37,175', '1,303', '1,7,47,705', '34,227', '1,45', '5,33', '1,187', '1,81', '2,50', '145,164', '39,88', '39,42,82,87', '1,175', '1,123', '1,715', '1,196,199,236,260,479,487,940,943,1037,1061,1257', '95,177,179,896', '1,317', '1,134,138,138', '3,91,93,540', '151,332', '36,59,61,126,128,216,218,239', '1,21', '1,74', '1,28,30,47', '35,67', '46,730,735,924,927,1295', '1,384,387,612', '35,1229', '1,72', '9,1107', '43,448', '43,162', '1,59', '1,187', '11,187', '1,713,716,717', '30,58,62,329', '1,145,148,167,171,213', '1,7,11,46,51,362', '52,56,61,69,73,150,155,165,178,198,207,222,226,251,255,268,275,345,349,370,381,548,553,607,617,639,663,691', '3,8', '1,9,13,59,73,92,97,114,142,151,156,186', '1,34', '1,22,38,47,50,82,90,98,108,130,133,152,156,250,260,414,420,561,568,585,590,680,691,751', '27,46', '1,20', '1,21', '1,20', '1,20', '1,20', '1,20', '1,20', '1,8', '1,21', '1,21', '1,93', '1,1,4,5,8,8,11,20,23,39,60,149', '2,21', '1,21', '1,21', '1,20', '1,21', '1,20', '1,20', '1,20', '1,20', '1,20', '1,677', '19,673', '40,332', '1,98', '1,97', '1,124', '1,103,126,265', '1,650', '1,563', '26,175', '38,150', '1,838,957,1013', '1,111', '1,8,103,623', '8,548', '1,640,645,844', '15,111', '1,82', '7,123,125,1206', '41,49,63,66,75,226', '1,21', '1,447', '1,23,26,176', '1,335,338,1572', '41,47,49,49,52,56,59,66', '1,33', '1,33', '1,26', '56,343', '21,509', '3,341', '1,549,552,750,752,1201,1219,1272', '36,214', '6,508', '1,59', '6,161', '1,33,36,74,80,383,410,493', '162,223', '25,31', '1,897', '36,805', '1,145', '35,59', '1,97', '3,10,13,303', '38,157', '3,886', '45,949', '35,474,477,990', '22,353', '33,319', '1,476', '38,214', '1,627', '2,18', '1,33', '1,228,231,728', '1,9', '1,108', '50,367', '86,96,99,400,404,512', '1,329', '1,404', '1,173', '28,581', '35,830', '1,18', '1,844', '42,250', '1,110,117,263', '1,49', '1,110', '1,394', '1,611', '14,372', '57,943', '28,445', '1,294,319,487', '36,102', '43,52,101,422', '1,58', '1,350', '31,568', '30,1938', '1,147', '6,123', '17,317', '1,367', '1,381', '1,1128', '37,407', '1,1704', '34,86', '24,53,66,72', '1,98'], 'runs': ['299368', '299369', '299370', '299380', '299381', '299394', '299395', '299396', '299420', '299443', '299450', '299477', '299478', '299479', '299480', '299481', '299593', '299594', '299595', '299597', '299649', '300087', '300105', '300106', '300107', '300117', '300122', '300123', '300155', '300156', '300157', '300226', '300233', '300234', '300235', '300236', '300237', '300238', '300239', '300240', '300280', '300281', '300282', '300283', '300284', '300364', '300365', '300366', '300367', '300368', '300369', '300370', '300371', '300372', '300373', '300374', '300375', '300389', '300390', '300391', '300392', '300393', '300394', '300395', '300396', '300397', '300398', '300399', '300400', '300401', '300459', '300461', '300462', '300463', '300464', '300466', '300467', '300497', '300514', '300515', '300516', '300517', '300558', '300560', '300574', '300575', '300576', '300631', '300632', '300633', '300635', '300636', '300673', '300674', '300675', '300676', '300742', '300777', '300780', '300785', '300806', '300811', '300812', '300816', '300817', '301046', '301141', '301142', '301161', '301165', '301179', '301180', '301183', '301281', '301283', '301298', '301323', '301330', '301359', '301384', '301391', '301392', '301393', '301396', '301397', '301398', '301399', '301417', '301447', '301448', '301449', '301450', '301461', '301472', '301475', '301476', '301519', '301524', '301529', '301530', '301531', '301532', '301567', '301627', '301664', '301665', '301694', '301912', '301913', '301914', '301941', '301959', '301960', '301970', '301984', '301985', '301986', '301987', '301997', '301998', '302019', '302026', '302029'], 'lumis_per_job': 1000}", u'0', u'9988b9babc3e79ef01bb54539bd2facaca4552a686495b71649ba506d0328bd5.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'psiddire', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy', u'cms', u'None', u'None', u'TagAndProbe_eraCv1-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0122.cern.ch/mon/cms1092/180128_185213:psiddire_crab_TagAndProbeeraCv1', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['TagAndProbe_eraCv1.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0122.cern.ch', u'F', u'[]', u'T', u'/store/user/psiddire/', u'F', u'None', u'F', u'F', u'F', u'None', u'SingleMuon', u'filetransfers', u'SUBMIT', u'24088886', u'82936aa7e4ddfe73b05319c7f810c069610b61b47b27a0774ddc75878d61995a.tar.gz', u'137.138.121.249', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2018-01-29 12:55:44,761: 	 CRAB project directory:		/afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraCv1
+INFO 2018-01-29 12:55:44,761: 	 Task name:			180128_185213:psiddire_crab_TagAndProbeeraCv1
+INFO 2018-01-29 12:55:44,761: 	 Grid scheduler:			crab3@vocms0122.cern.ch
+INFO 2018-01-29 12:55:44,761: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-01-29 12:55:44,761: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/180128_185213%3Apsiddire_crab_TagAndProbeeraCv1
+INFO 2018-01-29 12:55:44,761: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=psiddire&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=180128_185213%3Apsiddire_crab_TagAndProbeeraCv1
+DEBUG 2018-01-29 12:55:44,762: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 24088886)
+DEBUG 2018-01-29 12:55:44,762: 	 Webdir is located at http://vocms0122.cern.ch/mon/cms1092/180128_185213:psiddire_crab_TagAndProbeeraCv1
+DEBUG 2018-01-29 12:55:46,289: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0122/cms1092/180128_185213:psiddire_crab_TagAndProbeeraCv1
+DEBUG 2018-01-29 12:55:46,289: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0122/cms1092/180128_185213:psiddire_crab_TagAndProbeeraCv1/status_cache
+DEBUG 2018-01-29 12:55:47,769: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [12968.0], 'StartTimes': [1517167111.0], 'SubmitTimes': [1517165845.0], 'JobIds': ['24088888.0'], 'EndTimes': [1517180079.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [549612], 'TotalUserCpuTimeHistory': [7510], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [407]}, '3': {'Retries': 0, 'WallDurations': [5659.0], 'StartTimes': [1517167124.0], 'SubmitTimes': [1517165845.0], 'JobIds': ['24088890.0'], 'EndTimes': [1517172783.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [633972], 'TotalUserCpuTimeHistory': [4535], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [244]}, '2': {'Retries': 2, 'WallDurations': [7023.0, 2581.0, 1297.0], 'StartTimes': [1517167111.0, 1517176530.0, 1517180083.0], 'SubmitTimes': [1517165845.0, 1517174204.0, 1517179240.0], 'JobIds': ['24088889.0', '24089591.0', '24090318.0'], 'EndTimes': [1517174134.0, 1517179111.0, 1517181380.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'failed', 'ResidentSetSize': [559404, 589884, 287368], 'Error': [8028, "CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root', flags=0x10, permissions=0660) => error '[ERROR] Operation expired' (errno=0, code=206)\n      [d] Last URL tried: root://g22n03.hep.wisc.edu:31094//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root?tried=\n      [e] Problematic data server: g22n03.hep.wisc.edu:31094\n      [f] Disabled source: s17n08.hep.wisc.edu:31094\n      [g] Disabled source: s17n06.hep.wisc.edu:31094\n      [h] Disabled source: g22n07.hep.wisc.edu:31094\n      [i] Disabled source: s17n01.hep.wisc.edu:31094\n", {'type': 'Fatal Exception', 'details': "An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root', flags=0x10, permissions=0660) => error '[ERROR] Operation expired' (errno=0, code=206)\n      [d] Last URL tried: root://g22n03.hep.wisc.edu:31094//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root?tried=\n      [e] Problematic data server: g22n03.hep.wisc.edu:31094\n      [f] Disabled source: s17n08.hep.wisc.edu:31094\n      [g] Disabled source: s17n06.hep.wisc.edu:31094\n      [h] Disabled source: g22n07.hep.wisc.edu:31094\n      [i] Disabled source: s17n01.hep.wisc.edu:31094", 'exitCode': '8028'}], 'TotalUserCpuTimeHistory': [6098, 414, 4], 'SiteHistory': ['Unknown', 'Unknown', 'Unknown'], 'TotalSysCpuTimeHistory': [338, 27, 0]}, '5': {'Retries': 1, 'WallDurations': [7415.0, 7858.0], 'StartTimes': [1517167112.0, 1517175295.0], 'SubmitTimes': [1517165845.0, 1517174595.0], 'JobIds': ['24088892.0', '24089651.0'], 'EndTimes': [1517174527.0, 1517183153.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [570536, 610276], 'TotalUserCpuTimeHistory': [6579, 6185], 'SiteHistory': ['Unknown', 'Unknown'], 'TotalSysCpuTimeHistory': [299, 286]}, '4': {'Retries': 0, 'WallDurations': [5017.0], 'StartTimes': [1517167124.0], 'SubmitTimes': [1517165845.0], 'JobIds': ['24088891.0'], 'EndTimes': [1517172141.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [648740], 'TotalUserCpuTimeHistory': [4209], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [216]}, '7': {'Retries': 0, 'WallDurations': [3552.0], 'StartTimes': [1517167111.0], 'SubmitTimes': [1517165845.0], 'JobIds': ['24088894.0'], 'EndTimes': [1517170663.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [601172], 'TotalUserCpuTimeHistory': [2155], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [118]}, '6': {'Retries': 0, 'WallDurations': [5964.0], 'StartTimes': [1517167113.0], 'SubmitTimes': [1517165845.0], 'JobIds': ['24088893.0'], 'EndTimes': [1517173077.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [609320], 'TotalUserCpuTimeHistory': [3888], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [377]}}
+INFO 2018-01-29 12:55:47,769: 	 Status on the scheduler:	FAILED
+INFO 2018-01-29 12:55:47,769: 	 
+Jobs status:                    failed         14.3% (1/7)
+INFO 2018-01-29 12:55:47,769: 	 				finished       85.7% (6/7)
+INFO 2018-01-29 12:55:49,184: 	 
+No publication information available yet
+INFO 2018-01-29 12:55:49,184: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+1 jobs failed with exit code 8028
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+DEBUG 2018-01-29 12:55:49,202: 	 Requesting resubmission of failed jobs in task 180128_185213:psiddire_crab_TagAndProbeeraCv1
+INFO 2018-01-29 12:55:49,202: 	 Sending resubmit request to the server.
+DEBUG 2018-01-29 12:55:49,202: 	 Submitting {'publication': 0, 'jobids': ['2'], 'subresource': 'resubmit2', 'workflow': u'180128_185213:psiddire_crab_TagAndProbeeraCv1'} 
+DEBUG 2018-01-29 12:55:49,202: 	 Encoded resubmit request: publication=0&subresource=resubmit2&workflow=180128_185213%3Apsiddire_crab_TagAndProbeeraCv1&jobids=2
+DEBUG 2018-01-29 12:55:50,625: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_site_blacklist', u'tm_site_whitelist', u'tm_maxjobruntime', u'tm_maxmemory', u'tm_numcores', u'tm_priority']}}
+INFO 2018-01-29 12:55:50,625: 	 Resubmit request sent to the server.
+INFO 2018-01-29 12:55:50,626: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2018-01-29 12:55:50,655: 	 Log file is /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraCv1/crab.log
+DEBUG 2018-01-29 17:14:31,197: 	 Executing command: 'status'
+DEBUG 2018-01-29 17:14:31,230: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2018-01-29 17:14:31,797: 	 Checking credentials
+DEBUG 2018-01-29 17:14:31,799: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-29 17:14:31,799: 	 Getting proxy life time left
+DEBUG 2018-01-29 17:14:35,369: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 33786
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 17:14:38,696: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 33782
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 17:14:38,696: 	 Proxy valid for 09:23:06 hours
+DEBUG 2018-01-29 17:14:39,713: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 17:14:39,713: 	 Checking credentials
+DEBUG 2018-01-29 17:14:39,714: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2018-01-29 17:14:39,714: 	 Getting proxy life time left
+DEBUG 2018-01-29 17:14:43,850: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 33778
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 17:14:46,840: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 33774
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 17:14:46,840: 	 Proxy valid for 09:22:58 hours
+DEBUG 2018-01-29 17:14:48,928: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-01-29 17:14:49,473: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 17:14:49,474: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-01-29 17:14:49,474: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2018-01-29 17:14:51,413: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 623:06:12  (26.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-01-29 17:14:51,415: 	 Myproxy is valid: 2243172
+DEBUG 2018-01-29 17:14:51,415: 	 Command use: status
+DEBUG 2018-01-29 17:14:51,415: 	 Options use: ['-d', 'crab_projects/crab_TagAndProbeeraCv1/']
+DEBUG 2018-01-29 17:14:52,930: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2018-01-29 17:14:52,930: 	 Instance is prod
+DEBUG 2018-01-29 17:14:52,930: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-01-29 17:14:52,930: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-01-29 17:14:54,339: 	 Got information from server oracle database: {u'result': [u'180128_185213:psiddire_crab_TagAndProbeeraCv1', u'None', u'SUBMITTED', u'2018-01-28 18:52:14.192508', u'None', u'2018-01-28 18:57:11.439208', u'None', u'CMSSW_9_4_0', u'slc6_amd64_gcc630', u'/SingleMuon/Run2017C-PromptReco-v1/MINIAOD', u'[]', u'[]', u'LumiBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'lumis': ['37,175', '1,303', '1,7,47,705', '34,227', '1,45', '5,33', '1,187', '1,81', '2,50', '145,164', '39,88', '39,42,82,87', '1,175', '1,123', '1,715', '1,196,199,236,260,479,487,940,943,1037,1061,1257', '95,177,179,896', '1,317', '1,134,138,138', '3,91,93,540', '151,332', '36,59,61,126,128,216,218,239', '1,21', '1,74', '1,28,30,47', '35,67', '46,730,735,924,927,1295', '1,384,387,612', '35,1229', '1,72', '9,1107', '43,448', '43,162', '1,59', '1,187', '11,187', '1,713,716,717', '30,58,62,329', '1,145,148,167,171,213', '1,7,11,46,51,362', '52,56,61,69,73,150,155,165,178,198,207,222,226,251,255,268,275,345,349,370,381,548,553,607,617,639,663,691', '3,8', '1,9,13,59,73,92,97,114,142,151,156,186', '1,34', '1,22,38,47,50,82,90,98,108,130,133,152,156,250,260,414,420,561,568,585,590,680,691,751', '27,46', '1,20', '1,21', '1,20', '1,20', '1,20', '1,20', '1,20', '1,8', '1,21', '1,21', '1,93', '1,1,4,5,8,8,11,20,23,39,60,149', '2,21', '1,21', '1,21', '1,20', '1,21', '1,20', '1,20', '1,20', '1,20', '1,20', '1,677', '19,673', '40,332', '1,98', '1,97', '1,124', '1,103,126,265', '1,650', '1,563', '26,175', '38,150', '1,838,957,1013', '1,111', '1,8,103,623', '8,548', '1,640,645,844', '15,111', '1,82', '7,123,125,1206', '41,49,63,66,75,226', '1,21', '1,447', '1,23,26,176', '1,335,338,1572', '41,47,49,49,52,56,59,66', '1,33', '1,33', '1,26', '56,343', '21,509', '3,341', '1,549,552,750,752,1201,1219,1272', '36,214', '6,508', '1,59', '6,161', '1,33,36,74,80,383,410,493', '162,223', '25,31', '1,897', '36,805', '1,145', '35,59', '1,97', '3,10,13,303', '38,157', '3,886', '45,949', '35,474,477,990', '22,353', '33,319', '1,476', '38,214', '1,627', '2,18', '1,33', '1,228,231,728', '1,9', '1,108', '50,367', '86,96,99,400,404,512', '1,329', '1,404', '1,173', '28,581', '35,830', '1,18', '1,844', '42,250', '1,110,117,263', '1,49', '1,110', '1,394', '1,611', '14,372', '57,943', '28,445', '1,294,319,487', '36,102', '43,52,101,422', '1,58', '1,350', '31,568', '30,1938', '1,147', '6,123', '17,317', '1,367', '1,381', '1,1128', '37,407', '1,1704', '34,86', '24,53,66,72', '1,98'], 'runs': ['299368', '299369', '299370', '299380', '299381', '299394', '299395', '299396', '299420', '299443', '299450', '299477', '299478', '299479', '299480', '299481', '299593', '299594', '299595', '299597', '299649', '300087', '300105', '300106', '300107', '300117', '300122', '300123', '300155', '300156', '300157', '300226', '300233', '300234', '300235', '300236', '300237', '300238', '300239', '300240', '300280', '300281', '300282', '300283', '300284', '300364', '300365', '300366', '300367', '300368', '300369', '300370', '300371', '300372', '300373', '300374', '300375', '300389', '300390', '300391', '300392', '300393', '300394', '300395', '300396', '300397', '300398', '300399', '300400', '300401', '300459', '300461', '300462', '300463', '300464', '300466', '300467', '300497', '300514', '300515', '300516', '300517', '300558', '300560', '300574', '300575', '300576', '300631', '300632', '300633', '300635', '300636', '300673', '300674', '300675', '300676', '300742', '300777', '300780', '300785', '300806', '300811', '300812', '300816', '300817', '301046', '301141', '301142', '301161', '301165', '301179', '301180', '301183', '301281', '301283', '301298', '301323', '301330', '301359', '301384', '301391', '301392', '301393', '301396', '301397', '301398', '301399', '301417', '301447', '301448', '301449', '301450', '301461', '301472', '301475', '301476', '301519', '301524', '301529', '301530', '301531', '301532', '301567', '301627', '301664', '301665', '301694', '301912', '301913', '301914', '301941', '301959', '301960', '301970', '301984', '301985', '301986', '301987', '301997', '301998', '302019', '302026', '302029'], 'lumis_per_job': 1000}", u'0', u'9988b9babc3e79ef01bb54539bd2facaca4552a686495b71649ba506d0328bd5.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'psiddire', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy', u'cms', u'None', u'None', u'TagAndProbe_eraCv1-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'Analysis', u"{'maxjobruntime': 1250, 'priority': 10, 'site_blacklist': [], 'resubmit_jobids': ['2'], 'numcores': 1, 'site_whitelist': [], 'maxmemory': 2000, 'resubmit_publication': 0}", u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0122.cern.ch/mon/cms1092/180128_185213:psiddire_crab_TagAndProbeeraCv1', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['TagAndProbe_eraCv1.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0122.cern.ch', u'F', u'[]', u'T', u'/store/user/psiddire/', u'F', u'None', u'F', u'F', u'F', u'None', u'SingleMuon', u'filetransfers', u'None', u'24088886', u'82936aa7e4ddfe73b05319c7f810c069610b61b47b27a0774ddc75878d61995a.tar.gz', u'137.138.121.249', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2018-01-29 17:14:54,340: 	 CRAB project directory:		/afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraCv1
+INFO 2018-01-29 17:14:54,341: 	 Task name:			180128_185213:psiddire_crab_TagAndProbeeraCv1
+INFO 2018-01-29 17:14:54,341: 	 Grid scheduler:			crab3@vocms0122.cern.ch
+INFO 2018-01-29 17:14:54,341: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-01-29 17:14:54,346: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/180128_185213%3Apsiddire_crab_TagAndProbeeraCv1
+INFO 2018-01-29 17:14:54,346: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=psiddire&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=180128_185213%3Apsiddire_crab_TagAndProbeeraCv1
+DEBUG 2018-01-29 17:14:54,346: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 24088886)
+DEBUG 2018-01-29 17:14:54,347: 	 Webdir is located at http://vocms0122.cern.ch/mon/cms1092/180128_185213:psiddire_crab_TagAndProbeeraCv1
+DEBUG 2018-01-29 17:14:55,852: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0122/cms1092/180128_185213:psiddire_crab_TagAndProbeeraCv1
+DEBUG 2018-01-29 17:14:55,854: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0122/cms1092/180128_185213:psiddire_crab_TagAndProbeeraCv1/status_cache
+DEBUG 2018-01-29 17:14:57,249: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [12968.0], 'StartTimes': [1517167111.0], 'SubmitTimes': [1517165845.0], 'JobIds': ['24088888.0'], 'EndTimes': [1517180079.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [549612], 'TotalUserCpuTimeHistory': [7510], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [407]}, '3': {'Retries': 0, 'WallDurations': [5659.0], 'StartTimes': [1517167124.0], 'SubmitTimes': [1517165845.0], 'JobIds': ['24088890.0'], 'EndTimes': [1517172783.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [633972], 'TotalUserCpuTimeHistory': [4535], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [244]}, '2': {'Retries': 4, 'WallDurations': [7023.0, 2581.0, 1297.0, 9040.0, 4813.0], 'StartTimes': [1517167111.0, 1517176530.0, 1517180083.0, 1517227650.0, 1517237146.0], 'SubmitTimes': [1517165845.0, 1517174204.0, 1517179240.0, 1517227013.0, 1517236940.0], 'JobIds': ['24088889.0', '24089591.0', '24090318.0', '24100803.0', '24103117.0'], 'EndTimes': [1517174134.0, 1517179111.0, 1517181380.0, 1517236690.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'running', 'ResidentSetSize': [559404, 589884, 287368, 594384, 547596], 'Error': [8028, "CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root', flags=0x10, permissions=0660) => error '[ERROR] Operation expired' (errno=0, code=206)\n      [d] Last URL tried: root://g22n03.hep.wisc.edu:31094//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root?tried=\n      [e] Problematic data server: g22n03.hep.wisc.edu:31094\n      [f] Disabled source: s17n08.hep.wisc.edu:31094\n      [g] Disabled source: s17n06.hep.wisc.edu:31094\n      [h] Disabled source: g22n07.hep.wisc.edu:31094\n      [i] Disabled source: s17n01.hep.wisc.edu:31094\n", {'type': 'Fatal Exception', 'details': "An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root', flags=0x10, permissions=0660) => error '[ERROR] Operation expired' (errno=0, code=206)\n      [d] Last URL tried: root://g22n03.hep.wisc.edu:31094//store/data/Run2017C/SingleMuon/MINIAOD/PromptReco-v1/000/299/370/00000/AA08D1D2-CF6D-E711-8803-02163E013435.root?tried=\n      [e] Problematic data server: g22n03.hep.wisc.edu:31094\n      [f] Disabled source: s17n08.hep.wisc.edu:31094\n      [g] Disabled source: s17n06.hep.wisc.edu:31094\n      [h] Disabled source: g22n07.hep.wisc.edu:31094\n      [i] Disabled source: s17n01.hep.wisc.edu:31094", 'exitCode': '8028'}], 'TotalUserCpuTimeHistory': [6098, 414, 4, 8156, 0], 'SiteHistory': ['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown'], 'TotalSysCpuTimeHistory': [338, 27, 0, 390, 0]}, '5': {'Retries': 1, 'WallDurations': [7415.0, 7858.0], 'StartTimes': [1517167112.0, 1517175295.0], 'SubmitTimes': [1517165845.0, 1517174595.0], 'JobIds': ['24088892.0', '24089651.0'], 'EndTimes': [1517174527.0, 1517183153.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [570536, 610276], 'TotalUserCpuTimeHistory': [6579, 6185], 'SiteHistory': ['Unknown', 'Unknown'], 'TotalSysCpuTimeHistory': [299, 286]}, '4': {'Retries': 0, 'WallDurations': [5017.0], 'StartTimes': [1517167124.0], 'SubmitTimes': [1517165845.0], 'JobIds': ['24088891.0'], 'EndTimes': [1517172141.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [648740], 'TotalUserCpuTimeHistory': [4209], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [216]}, '7': {'Retries': 0, 'WallDurations': [3552.0], 'StartTimes': [1517167111.0], 'SubmitTimes': [1517165845.0], 'JobIds': ['24088894.0'], 'EndTimes': [1517170663.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [601172], 'TotalUserCpuTimeHistory': [2155], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [118]}, '6': {'Retries': 0, 'WallDurations': [5964.0], 'StartTimes': [1517167113.0], 'SubmitTimes': [1517165845.0], 'JobIds': ['24088893.0'], 'EndTimes': [1517173077.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [609320], 'TotalUserCpuTimeHistory': [3888], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [377]}}
+INFO 2018-01-29 17:14:57,249: 	 Status on the scheduler:	SUBMITTED
+INFO 2018-01-29 17:14:57,249: 	 
+Jobs status:                    finished       85.7% (6/7)
+INFO 2018-01-29 17:14:57,250: 	 				running        14.3% (1/7)
+INFO 2018-01-29 17:14:59,239: 	 
+No publication information available yet
+INFO 2018-01-29 17:15:00,128: 	 Log file is /afs/cern.ch/user/p/psiddire/CMSSW_9_4_0/src/CMSDASExercises/MuonExercise4/test/crab_projects/crab_TagAndProbeeraCv1/crab.log
